@@ -1,0 +1,80 @@
+.edally-black-heading{
+    font-size: 22px;
+    text-transform: uppercase;
+    font-weight: 700;  
+    margin-bottom: 30px;
+    margin-top: 20px;
+}
+
+.edally-content-link {
+    text-decoration: underline;
+    color: #000;
+}
+
+.edally-content-link:hover{
+    text-decoration: underline;
+}
+
+.multilevel{
+    padding-bottom: 20px;
+    padding-top: 20px;
+    font-weight: 700;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
+.uppercase-text
+{
+    text-transform: uppercase;
+    margin:10px 0;
+    display: inline-block;
+}
+
+/*style image*/
+.edally-img-item,.edally-img-team,.edally-img-item-large{
+    text-align: center;
+    margin: 15px 0;
+}
+
+.edally-img-item img{
+    width: 600px;
+    margin: 0 auto;
+}
+
+.edally-img-team img{
+    width: 350px;
+    display: inline-block;
+}
+
+.edally-img-item-large img{
+    width: 100%;
+}
+/*style list ul li*/
+.edally-hyphen-list ul,.edally-bullet-list ul {
+    list-style: none; /* Remove HTML bullets */
+    padding: 0;
+    margin: 0;
+}
+
+.edally-hyphen-list > li::before{
+    content: "-";
+    padding-right: 8px;
+}
+
+.edally-hyphen-list > li{
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+
+.edally-bullet-list > li::before{
+    content: "•";
+    padding-right: 8px;
+}
+
+@media only screen and (max-width: 767px)
+{
+    .edally-img-item img,.edally-img-team img{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}

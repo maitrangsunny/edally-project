@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js" lang="vi">
+<!--<![endif]-->
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Quy định thanh toán</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- libraries -->
+    <link rel="stylesheet" href="./assets/stylesheets/vendors/normalize.css">
+    <link rel="stylesheet" href="./assets/stylesheets/vendors/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/stylesheets/all.min.css">
+    <link rel="stylesheet" href="./assets/stylesheets/vendors/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto&display=swap">
+    <!-- my styles -->
+    <link rel="stylesheet" href="./assets/stylesheets/main.css">
+    <link rel="stylesheet" href="./assets/stylesheets/static-page.css">
+
+</head>
+
+
+<body>
+    <header>
+        <div class="header-container" id="myHeader">
+            <div class="top-menu">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-12 col-md-3">
+                            <a class="logo" href="#"><img alt="logo" src="./assets/images/logo/logo4.png"
+                                    class="img-responsive" /></a>
+                        </div>
+                        <div class="col-xs-12 col-sm-12 col-md-5">
+                            <div class="search-box">
+                                <!-- Search form -->
+                                <form role="search" method="get" class="searchform">
+                                    <input type="text" placeholder="Tìm sản phẩm" value="">
+                                    <input type="hidden" name="post_type" value="product">
+                                    <button type="submit" class="searchsubmit">
+                                        <i class="fa fa-search" aria-hidden="true"></i>
+                                    </button>
+                                </form>
+                            </div>
+                        </div>
+                        <span class="mobile-bar visible-sm visible-xs" onclick="openNav()">&#9776;</span>
+                    </div>
+                </div>
+            </div>
+            <div class="navbar navbar-menu hidden-sm hidden-xs">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <div class="" id="navbarNav">
+                                <ul class="navbar-nav">
+                                    <li class="nav-item active">
+                                        <a class="nav-link" href="#">Trang chủ</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">Thương hiệu</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">Sản phẩm</a>
+                                        <ul class="submenu">
+                                            <li><a class="" href="#">Dòng tái sinh, phục hồi</a></li>
+                                            <li><a href="#">Dòng bí mật hoàng cung</a></li>
+                                            <li><a href="#">Dòng trang điểm</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">Chuyên gia tư vấn</a>
+                                        <ul class="submenu">
+                                            <li><a class="" href="#">Chuyên gia tư vấn</a></li>
+                                            <li><a href="#">Chuyên gia tư vấn</a></li>
+                                            <li><a href="#">Chuyên gia tư vấn</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">Đại lý</a>
+                                        <ul class="submenu">
+                                            <li><a class="" href="#">Đại lý</a></li>
+                                            <li><a href="#">Đại lý</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">Blog làm đẹp</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">Tin tức</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">Liên hệ</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- menu on mobiles & tablets -->
+        <div class="mobile-menu visible-sm visible-xs" id="mySidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><i class="fa fa-times"></i></a>
+            <ul class="mobile-list mobile-list-level1">
+                <li><a href="/">Trang chủ</a></li>
+                <li><a href="">Thương hiệu</a></li>
+                <li><a href="">Sản phẩm</a>
+                    <i class="fa fa-angle-down" aria-hidden="true"></i>
+                    <ul class="mobile-list-level2 hidden">
+                        <li><a href="">Dòng tái sinh, phục hồi</a></li>
+                        <li><a href="">Dòng bí mật hoàng cung</a></li>
+                        <li><a href="">dòng trang điểm</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="">Chuyên gia tư vấn</a>
+                    <i class="fa fa-angle-down" aria-hidden="true"></i>
+                    <ul class="mobile-list-level2 hidden">
+                        <li>
+                            <a href="">Chuyên gia tư vấn</a>
+                            <i class="fa fa-angle-down" aria-hidden="true"></i>
+                            <ul class="mobile-list-level3 hidden">
+                                <li><a href="">Chuyên gia tư vấn</a></li>
+                                <li><a href="">Đẹp chuẩn chuyên gia</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="">Đẹp chuẩn chuyên gia</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="">Đại lý</a>
+                    <i class="fa fa-angle-down" aria-hidden="true"></i>
+                    <ul class="mobile-list-level2 hidden">
+                        <li><a href="">Chính sách đại lý</a></li>
+                        <li><a href="">Hệ thống phân phối toàn quốc</a></li>
+                        <li><a href="">Câu chuyện đại lý</a></li>
+                        <li><a href="">Đào tạo đại lý</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="">Blog làm đẹp</a>
+                    <i class="fa fa-angle-down" aria-hidden="true"></i>
+                </li>
+                <li><a href="">Tin tức</a>
+                    <i class="fa fa-angle-down" aria-hidden="true"></i>
+                </li>
+                <li><a href="">Liên hệ</a></li>
+            </ul>
+        </div>
+    </header>
+    <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+    <main>
+        <div class="static-page content-wrapper mg-30">
+            <div class="container">
+                <div class="edally-black-heading">QUY ĐỊNH THANH TOÁN</div>
+                <strong class="uppercase-text">I. PHƯƠNG THỨC GIAO HÀNG - TRẢ TIỀN MẶT</strong>
+                <ul class="edally-hyphen-list">
+                    <li>Phương thức Giao hàng - Trả tiền mặt chỉ áp dụng đối với những khu vực Edally.vn hỗ trợ giao nhận (phạm vi giao hàng ≤ 20km tính từ các cửa hàng là đại lý phân phối của Edally.vn), trả tiền mua hàng trực tiếp tại các cửa hàng là đại lý phân phối của Edally.vn hoặc Edally.vn hỗ trợ vận chuyển COD cho khách hàng ở tỉnh.</li>
+                    <li>Với phương thức thanh toán trực tiếp Quý khách có thể đặt hàng trên Website.Nhân viên chúng tôi sẽ tiến hành xuất hàng cho Quý khách và xác nhận ngày giờ giao hàng với Quý khách sau khi xuất hàng.</li>
+                    <li>Quý khách có trách nhiệm thanh toán đầy đủ toàn bộ giá trị đơn hàng cho Nhân viên giao nhận hoặc Nhân viên bán hàng và chăm sóc khách hàng của Edally.vn ngay khi hoàn tất kiểm tra hàng hóa và nhận Phiếu giao hàng kiêm phiếu xuất kho. Quý khách thanh toán đúng số tiền trên Phiếu đã ghi, nếu có bất cứ thắc mắc nào Quý khách gọi lại cho Edally.vn để được thông tin cụ thể hơn.</li>
+                </ul>
+                <strong class="uppercase-text">II. PHƯƠNG THỨC THANH TOÁN TRƯỚC</strong>
+                <p>&nbsp;Chuyển tiền, chuyển khoản, thanh toán trực tiếp bằng tiền mặt hoặc qua thẻ tại các&nbsp;<strong>hệ thống ngân hàng</strong>&nbsp;hoặc trung tâm giao dịch của Edally.vn</p>
+                <strong>1) Chuyển tiền/chuyển khoản:</strong>
+                <ul class="edally-hyphen-list">
+                    <li>
+                        Áp dụng cho khách hàng ngoài  khu vực nội thành (phạm vi giao hàng từ 20km đến 100km tính từ các trung tâm của hệ thống siêu thị điện máy Edally.vn) và khách hàng có nhu cầu sử dụng phương thức thanh toán này. Các bước tiến hành như sau:
+                        <ol>
+                            <li>Đến Ngân hàng gần nơi ở của Quý khách nhất để chuyển tiền/chuyển khoản theo thông tin chi tiết Edally.vn cung cấp: Số tiền, Tên đơn vị, số tài khoản, Ngân hàng mở tài khoản, nội dụng chuyển tiền/chuyển khoản.</li>
+                            <li>Thông báo cho Edally.vn (bằng điện thoại, email, SMS, fax, ...) khi Quý khách đã thực hiện chuyển tiền/chuyển khoản.</li>
+                            <li>Ngay khi nhận được báo cáo xác nhận từ Ngân hàng, Edally.vn sẽ tiến hành thông báo lại cho Quý khách đồng thời xuất hàng giao hàng cho Quý khách trong thời gian quy định trong mục Chính sách vận chuyển.</li>
+                        </ol>
+                    </li>
+                    <li>Edally.vn sẽ không chịu trách nhiệm về sai sót trong quá trình chuyển khoản hoặc chuyển khoản sai thông tin, Quý khách phải làm việc với Ngân hàng để được xử lý ổn thỏa, chỉ khi nào tiền được chuyển đến tài khoản của Edally.vn, Edally.vn sẽ xác nhận với Quý khách. Trong một số tình huống Quý khách có thể nhờ phía Ngân hàng mà Quý khách thực hiện giao dịch hoặc Ngân hàng của Edally.vn sử dụng để kiểm tra đối chứng cần thiết.</li>
+                </ul>
+                <strong>2)  Thanh toán trực tiếp bằng tiền mặt hoặc thẻ (Thẻ Visa, Thẻ tín dụng...):</strong>
+                <ul class="edally-hyphen-list">
+                    <li>Quý khách đến quầy giao dịch thuộc Hệ thống siêu thị điện máy Edally.vn để thực hiện thanh toán, nhân viên của Edally.vn sẽ hướng dẫn Quý khách. Quý khách lưu  ý khi thanh toán sẽ có “Phiếu giao hàng kiêm phiếu xuất kho” của Edally.vn.</li>
+                    <li>Trong trường hợp Quý khách thanh toán bằng thẻ Visa hoặc Master bằng cách quẹt thẻ tại Trung tâm bất kỳ thuộc hệ thống của Edally.vn, Quý khách phải mang thẻ và phải đúng chủ thẻ để lấy phiếu và ký nhận phiếu đã thanh toán. Edally.vn sẽ không chịu trách nhiệm khi Quý khách dùng thẻ của người khác để thanh toán. Ngay sau khi kiểm tra và nhận được xác nhận từ Ngân hàng, Edally.vn sẽ tiến hành xuất hàng và giao hàng cho Quý khách trong thời gian sớm nhất.</li>
+                </ul>
+                <strong>3) Thanh toán COD qua bên vận chuyển thứ 3</strong>
+                <br/><br/>
+                <p>Khi quý khách có nhu cầu đặt hàng và muốn xem hàng trực tiếp rùi thanh toán. Khách hàng cần cung cấp đầy đủ thông tin gồm : Họ và tên, Địa chỉ, Số điện thoại và số lượng hàng báo lại cho Edally. Bên chúng tôi sẽ xác nhận và chuyển hàng cho quý khách qua bên vận chuyển. Quý khách kiểm tra hàng hóa đúng chất lượng và số lượng sau đó thanh toán cho bên vận chuyển sau đó sẽ nhận được hàng.</p>
+            </div>
+            <!-- content-wrapper -->
+        </div>
+    </main>
+    <footer>
+        <div class="footer-wrapper">
+            <div class="container">
+                <div class="footer-list">
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-12 col-md-3 footer-item">
+                            <img src="./assets//images/footer/logo1.png" class="img-responsive" alt="footer-logo" />
+                            <p>Thương hiệu mỹ phẩm cao cấp nhập khẩu Hàn Quốc được triệu phụ nữ Việt tin dùng</p>
+                        </div>
+                        <div class="col-xs-12 col-sm-4 col-md-3 footer-item">
+                            <h4 class="footer-title">Edally ex</h4>
+                            <ul class="">
+                                <li><a href="">Trang chủ</a></li>
+                                <li><a href="">Thương hiệu</a></li>
+                                <li><a href="">Sản phẩm</a></li>
+                                <li><a href="">Chuyên gia tư vấn</a></li>
+                                <li><a href="">Đại lý</a></li>
+                                <li><a href="">Blog làm đẹp</a></li>
+                                <li><a href="">Tin tức</a></li>
+                                <li><a href="">Liên hệ</a></li>
+                            </ul>
+                            <img src="./assets/images/footer/bct-note.png" alt="btc" class="img-responsive">
+                        </div>
+                        <div class="col-xs-12 col-sm-4 col-md-3 footer-item">
+                            <h4 class="footer-title">Fanpage Edally EX</h4>
+                            <div class="fb-page" data-href="https://www.facebook.com/Edally.vn/" data-tabs=""
+                                data-width="290" data-height="300" data-small-header="false"
+                                data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true">
+                                <blockquote cite="https://www.facebook.com/Edally.vn/" class="fb-xfbml-parse-ignore"><a
+                                        href="https://www.facebook.com/Edally.vn/">Edally - Mỹ Phẩm Tái Tạo Da Chuyên
+                                        Sâu</a></blockquote>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-4 col-md-3 footer-item">
+                            <h4 class="footer-title">Chính sách và quy định</h4>
+                            <ul>
+                                <li><a href="">Hướng dẫn mua hàng</a></li>
+                                <li><a href="">Chính sách đại lý </a></li>
+                                <li><a href="">Chính sách bảo mật</a></li>
+                                <li><a href="">Chính sách vận chuyển</a></li>
+                                <li><a href="">Quy định thanh toán</a></li>
+                            </ul>
+                            <form class="frm-mail form-inline">
+                                <input type="text" placeholder="Nhập email của bạn" />
+                                <button class="btn-positive btn-yellow btn-send">Gửi</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright">
+            <div class="container">
+                <p>
+                    © Bản quyền thuộc về Edally EX | Cung cấp bởi <a href="http://sapo.vn" target="_blank">Sapo</a>
+                </p>
+            </div>
+        </div>
+        <div class="hot-lines">
+            <a href="tel:1-562-867-5309"><i class="fa fa-phone-alt" aria-hidden="true"></i></a>
+        </div>
+        <a href="#" id="goTop" class="back-to-top"><i class="fa fa-angle-up"></i></a>
+    </footer>
+
+    <script src="./assets/scripts/jquery-2.1.4.min.js"></script>
+    <script src="./assets/scripts/bootstrap.min.js"></script>
+    <script src="./assets/scripts/owl.carousel.min.js"></script>
+    <script async defer crossorigin="anonymous"
+        src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v4.0"></script>
+
+    <script>
+        function openNav() {
+            document.getElementById("mySidenav").style.width = "300px";
+        }
+
+        function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+        }
+        window.onscroll = function () { fixedMenu() };
+
+        var header = document.getElementById("myHeader");
+        var sticky = header.offsetTop;
+
+        function fixedMenu() {
+            if (window.pageYOffset > sticky) {
+                header.classList.add("sticky");
+            } else {
+                header.classList.remove("sticky");
+            }
+        }
+        $(document).ready(function () {
+            $(".fa-angle-down").click(function () {
+                if ($(this).hasClass('active')) {
+                    $(this).removeClass('active');
+                    $(this).parent().find("ul").addClass('hidden');
+                } else {
+                    $(this).addClass('active');
+                    $(this).parent().children("ul").removeClass('hidden');
+                }
+            })
+            $(".banner-owl-carousel").owlCarousel({
+                nav: true,
+                navText: ["<i class='fa fa-angle-left'></i>", "<i class='fa fa-angle-right'></i>"],
+                slideSpeed: 300,
+                paginationSpeed: 400,
+                items: 1,
+                autoplay: true,
+                rewind: true,
+            });
+            $(".custom-owl-carousel-4").owlCarousel({
+                nav: true,
+                navText: ["<i class='fa fa-angle-left'></i>", "<i class='fa fa-angle-right'></i>"],
+                items: 4,
+                autoplay: true,
+                autoplayTimeout: 1000,
+                autoplayHoverPause: true,
+                rewind: true,
+                dots: false,
+                margin: 30,
+                responsiveClass: true,
+                responsive: {
+                    0: {
+                        items: 1
+                    },
+                    767: {
+                        items: 3
+
+                    },
+                    991: {
+                        items: 4,
+
+                    }
+                }
+            });
+            $(".custom-owl-carousel-3").owlCarousel({
+                nav: true,
+                navText: ["<i class='fa fa-angle-left'></i>", "<i class='fa fa-angle-right'></i>"],
+                items: 3,
+                autoplay: true,
+                autoplayTimeout: 1000,
+                autoplayHoverPause: true,
+                rewind: true,
+                dots: false,
+                margin: 35,
+                responsiveClass: true,
+                responsive: {
+                    0: {
+                        items: 1
+                    },
+                    767: {
+                        items: 3
+
+                    }
+                }
+            })
+            $(window).scroll(function () {
+                if ($(this).scrollTop() > 100) {
+                    $('#goTop').fadeIn();
+                } else {
+                    $('#goTop').fadeOut();
+                }
+            });
+            $('#goTop').click(function () {
+                $("html, body").animate({ scrollTop: 0 }, 600);
+                return false;
+            });
+        });
+
+
+
+    </script>
+</body>
+
+</html>

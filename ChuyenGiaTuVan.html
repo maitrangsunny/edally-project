@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js" lang="vi">
+<!--<![endif]-->
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Chuyên gia tư vấn</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- libraries -->
+    <link rel="stylesheet" href="./assets/stylesheets/vendors/normalize.css">
+    <link rel="stylesheet" href="./assets/stylesheets/vendors/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/stylesheets/all.min.css">
+    <link rel="stylesheet" href="./assets/stylesheets/vendors/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto&display=swap">
+    <!-- my styles -->
+    <link rel="stylesheet" href="./assets/stylesheets/main.css">
+    <link rel="stylesheet" href="./assets/stylesheets/static-page.css">
+
+</head>
+
+<body>
+    <header>
+        <div class="header-container" id="myHeader">
+            <div class="top-menu">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-12 col-md-3">
+                            <a class="logo" href="#"><img alt="logo" src="./assets/images/logo/logo4.png"
+                                    class="img-responsive" /></a>
+                        </div>
+                        <div class="col-xs-12 col-sm-12 col-md-5">
+                            <div class="search-box">
+                                <!-- Search form -->
+                                <form role="search" method="get" class="searchform">
+                                    <input type="text" placeholder="Tìm sản phẩm" value="">
+                                    <input type="hidden" name="post_type" value="product">
+                                    <button type="submit" class="searchsubmit">
+                                        <i class="fa fa-search" aria-hidden="true"></i>
+                                    </button>
+                                </form>
+                            </div>
+                        </div>
+                        <span class="mobile-bar visible-sm visible-xs" onclick="openNav()">&#9776;</span>
+                    </div>
+                </div>
+            </div>
+            <div class="navbar navbar-menu hidden-sm hidden-xs">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <div class="" id="navbarNav">
+                                <ul class="navbar-nav">
+                                    <li class="nav-item active">
+                                        <a class="nav-link" href="#">Trang chủ</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">Thương hiệu</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">Sản phẩm</a>
+                                        <ul class="submenu">
+                                            <li><a class="" href="#">Dòng tái sinh, phục hồi</a></li>
+                                            <li><a href="#">Dòng bí mật hoàng cung</a></li>
+                                            <li><a href="#">Dòng trang điểm</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">Chuyên gia tư vấn</a>
+                                        <ul class="submenu">
+                                            <li><a class="" href="#">Chuyên gia tư vấn</a></li>
+                                            <li><a href="#">Chuyên gia tư vấn</a></li>
+                                            <li><a href="#">Chuyên gia tư vấn</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">Đại lý</a>
+                                        <ul class="submenu">
+                                            <li><a class="" href="#">Đại lý</a></li>
+                                            <li><a href="#">Đại lý</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">Blog làm đẹp</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">Tin tức</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">Liên hệ</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- menu on mobiles & tablets -->
+        <div class="mobile-menu visible-sm visible-xs" id="mySidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><i class="fa fa-times"></i></a>
+            <ul class="mobile-list mobile-list-level1">
+                <li><a href="/">Trang chủ</a></li>
+                <li><a href="">Thương hiệu</a></li>
+                <li><a href="">Sản phẩm</a>
+                    <i class="fa fa-angle-down" aria-hidden="true"></i>
+                    <ul class="mobile-list-level2 hidden">
+                        <li><a href="">Dòng tái sinh, phục hồi</a></li>
+                        <li><a href="">Dòng bí mật hoàng cung</a></li>
+                        <li><a href="">dòng trang điểm</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="">Chuyên gia tư vấn</a>
+                    <i class="fa fa-angle-down" aria-hidden="true"></i>
+                    <ul class="mobile-list-level2 hidden">
+                        <li>
+                            <a href="">Chuyên gia tư vấn</a>
+                            <i class="fa fa-angle-down" aria-hidden="true"></i>
+                            <ul class="mobile-list-level3 hidden">
+                                <li><a href="">Chuyên gia tư vấn</a></li>
+                                <li><a href="">Đẹp chuẩn chuyên gia</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="">Đẹp chuẩn chuyên gia</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="">Đại lý</a>
+                    <i class="fa fa-angle-down" aria-hidden="true"></i>
+                    <ul class="mobile-list-level2 hidden">
+                        <li><a href="">Chính sách đại lý</a></li>
+                        <li><a href="">Hệ thống phân phối toàn quốc</a></li>
+                        <li><a href="">Câu chuyện đại lý</a></li>
+                        <li><a href="">Đào tạo đại lý</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="">Blog làm đẹp</a>
+                    <i class="fa fa-angle-down" aria-hidden="true"></i>
+                </li>
+                <li><a href="">Tin tức</a>
+                    <i class="fa fa-angle-down" aria-hidden="true"></i>
+                </li>
+                <li><a href="">Liên hệ</a></li>
+            </ul>
+        </div>
+    </header>
+    <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+    <main>
+        <div class="static-page content-wrapper mg-30">
+            <div class="container">
+                <div class="edally-black-heading">Chuyên gia tư vấn</div>
+                <div class="edally-img-item">
+                    <img src="./assets/images/static/chuyen-gia-tu-van.jpg" class="img-responsive" alt=""/>
+                </div>
+                <p class="yellow-text"><strong><i>1. Tôi năm nay ngoài 30 tuổi, da bắt đầu xỉn màu và có xuất hiện nám ở 2 bên gò má. Tôi phải làm gì để khắc phục tình trạng này? (Chị Linh, Cầu Giấy, Hà Nội)</i></strong></p>
+                <p>Chào bạn! <br/>
+                    Các dấu hiệu mà bạn đang gặp phải chính là tình trạng lão hóa da. Lão hóa da là một vấn đề mà bất kỳ ai cũng phải đối mặt trong suốt các giai đoạn của cuộc đời đặc biệt là phụ nữ khi bước vào giai đoạn ngoài 30 tuổi. Ở giai đoạn này nội tiết tố thường bị rối loạn kết hợp với các tác động xấu từ môi trường như khói bụi, tia UV… kích thích cơ thể tăng cường sản sinh các sắc tố Menalin tối màu, các sắc tố này thường tập trung ở gò má, trán hay các vùng tiếp xúc nhiều với ánh nắng mặt trời.
+                    Để khắc phục tình trạng này bạn nên sử dụng các sản phẩm chuyên về chống lão da như Edally EX và bảo vệ da khỏi các tác động xấu từ môi trường đồng thời kết hợp việc tập thể dục, ăn uống điều độ.</p>
+                <p class="yellow-text"><strong><i>2. Tôi muốn tìm hiểu nguyên nhân gây nhăn da, có cách gì để giảm bớt được tình trạng nhăn da không? (Chị Hà, Từ Liêm, Hà Nội)</i></strong></p>
+                    <p>Chào bạn!<br/>
+                        Có rất nhiều nguyên nhân gây nên tình trạng da bị nhăn, trong đó phải kể đến các nguyên nhân chính như: tuổi tác, ảnh hưởng của ánh nắng, môi trường ô nhiễm, khói thuốc, uống rượu, mất ngủ, căng thẳng hoặc quá mạnh tay với da…tất cả các nguyên nhân này đều khiến các liên kết Laminin, Elastin, Fibroneectin, Proteoglycan bị bẻ gãy, lượng Collagen bị hao hụt. Làm phá vỡ cấu trúc nền của da, khiến da bị tổn thương, trở nên lỏng lẻo từ đó gây nên tình trạng nhăn da.
+                        Để giảm bớt tình trạng nhăn da bạn nên tránh khỏi những nguyên nhân gây nhăn da kể trên. Đồng thời sử dụng sử dụng các sản phẩm chuyên về chống lão da, khôi phục cấu trúc nền cho da, cung cấp lượng Collagen tự nhiên như Edally EX.</p>
+                <p class="yellow-text"><strong><i>3. Collagen có tầm quan trọng như thế nào với da? Nếu thiếu hụt sẽ gây ra những vấn đề gì?  (Chị Ngoan, Phù Cừ, Hưng Yên)</i></strong></p>
+                <p>
+                    Chào bạn!<br/>
+                    Collagen là thành phần đặc biệt quan trọng với làn da, cấu tạo nên cấu trúc nền dưới da. Nếu đem so sánh cấu trúc của làn da với một ngôi nhà thì Collagen đóng vai trò cực kỳ quan trọng, nó giốn như trụ cột để nâng đỡ cấu trúc của toàn bộ ngôi nhà. Khi những sợi collagen này đứt gãy hay thiếu hụt sẽ làm phá vỡ cấu trúc da, ảnh hưởng đến khả năng nâng đỡ cấu trúc da bên trong, gây ra tình trạng vết chân chim ở vùng đuôi mắt, nếp nhăn hay thậm trí là tình trạng da bị chảy xệ. Phụ nữ từ 30 tuổi trở đi lượng Collagen mất đi khoảng 7% đến 10% mỗi năm và cho đến khoảng tuổi 50 lượng Collagen này sẽ mất đi đến 50%. Trong khi đó ở độ tuổi này cơ thể không còn khả năng sản sinh lượng Collagen tự nhiên để bù đắp lượng thiếu hụt nữa.
+                    Chính vì thế từ sau 30 tuổi, trên gương mặt của phụ nữ sẽ bắt đầu có sự xuất hiện vết chân chim ở vùng đuôi mắt, nếp nhăn hay thậm trí là tình trạng da bị chảy xệ.</p>
+                
+                <p class="yellow-text"><strong><i>4. Tôi không hiểu như nào là cấu trúc nền của da? Chuyên gia có thể tư vấn cho tôi hiểu được không? (Chị Dung, Nam Định)</i></strong></p>
+                <p>
+                    Chào bạn! <br/>
+                    Làn da nói chung và da mặt nói riêng có cấu trúc gồm 3 lớp chính: lớp thượng bì, lớp bì và lớp hạ bì.<br/>
+                    Trong đó lớp bì được xem như là cấu trúc nền của da. Cấu trúc nền bao gồm các thành phần: Laminin, Elastin, Fibroneectin, Collagen, Proteoglycan là bộ phận quan trọng nhất, được ví như “bộ khung vàng” , nơi chứa các mô liên kết tạo nên kết cấu và quyết sự khỏe mạnh hay không của làn da.<br/>
+                    Cấu trúc nền được xem như yếu tố quyết định cho sức sống của làn da. Chúng được sắp xếp và liên kết với nhau tạo thành “ bộ khung vàng ” vững chắc để nâng đỡ làn da, giúp da đàn hồi, co giãn và tái tạo da giúp da luôn căng mịn, trắng sáng và khỏe mạnh.</p>
+                <ul class="edally-bullet-list">
+                    <li>Cung cấp một hàng rào bảo vệ chống lại các tổn thương cơ, nhiệt và thể chất và các chất độc hại.</li>
+                    <li>Ngăn ngừa mất độ ẩm.</li>
+                    <li>Giảm tác hại của bức xạ tia cực tím.</li>
+                    <li>Hoạt động như một cơ quan cảm giác (cảm ứng, phát hiện nhiệt độ).</li>
+                    <li>Giúp điều hòa nhiệt độ.</li>
+                    <li>Một cơ quan miễn dịch để phát hiện nhiễm vv</li>
+                    <li>Sản xuất vitamin D.</li>
+                </ul>
+                <p class="yellow-text"><strong><i>5. Tôi năm nay 36 tuổi, da mặt tôi dạo gần đây có xuất hiện các dấu hiệu lão hóa như: nám, sạm và khô, 1 ít nếp nhăn đã xuất hiện ở vùng đuôi mắt. Tôi đã tìm hiểu về nhiều loại mỹ phẩm chống lão hóa da nhưng chưa sử dụng loại nào vì tôi vẫn chưa tin tưởng vào chất lượng. Chuyên gia cho hỏi mỹ phẩm chống lão hóa Edally EX có tác dụng như nào với các dấu hiệu lão hóa da, tôi có thể tin tưởng sử dụng Edally EX được không? (Chị Huyền, Hải Phòng)</i></strong></p>
+                <p>Chào bạn!<br/>
+                        Không giống như những loại mỹ phẩm thông thường, Edally Ex được chiết xuất từ các dưỡng chất thiên nhiên cao cấp như: rong nho biển, thảo mộc sinh trưởng tự nhiên trên dãy núi Alpes Thụy Sĩ, tinh chất collagen biển tinh khiết 100%, vàng, tổ yến… Kết hợp cùng công nghệ chăm sóc da lần đầu tiên có mặt tại Việt Nam NEOCELL SCIENCE bao gồm các thành phần tương tự dịch tế bào cũng như các khoáng chất cần thiết cho da. Edally EX mang lại hiệu quả từ từ nhưng bền vững trong việc loại bỏ tình trạng lão hóa da. Edally EX giúp loại bỏ các sắc tố Menalin tối màu kẻ thù số 1 gây nên tình trạng nám, tàn nhan, hình thành màng dưỡng ẩm bảo vệ da khỏi các tác động xấu từ phía môi trường đồng thời cung cấp Collagen tự nhiên giúp giữ cấu trúc nền của da luôn chắc khỏe, loại bỏ tình trạng nhăn da, chảy xệ ở da. Đồng thời bộ mỹ phẩm trẻ hóa làn da Edally Ex được sản xuất trên dây truyền công nghệ tiến từ 2 nhà máy hàng đầu Hàn Quốc là: Cosmax và Coreana.<br/>
+                        Cosmax và Coreana từng là nhà sản xuất cho rất nhiều thương hiệu mỹ phẩm nổi tiếng như: Maybelline, Lankôme, L’orea, Thefaceshop, Tonymoly, Hanskin…Từ khâu phát triển sản phẩm mới, tính hiệu quả, độ an toàn, quản lý chất lượng Cosmax và Coreana đều theo dõi rất gắt gao trước khi gửi tới người tiêu dùng.<br/>
+                        Do vậy, bạn có thể hoàn toàn an tâm khi sử dụng Edally EX.</p>
+                <p class="yellow-text"><strong><i>6. Da tôi là da khô và nhạy cảm. Tôi muốn dụng Edally EX thì có phù hợp không? (Chị Yến, Vĩnh Phúc)</i></strong></p>
+                <p>Chào bạn!<br/>
+                        Mỹ phẩm trẻ hóa làn da Edally EX được chiết xuất từ các dưỡng chất từ thiên nhiên, rất an toàn và phù hợp cho mọi loại da. Nếu da bạn khô và nhạy cảm thì vẫn có thể sử dụng được Edally EX.</p>
+                <p class="yellow-text"><strong><i>7. Bộ mỹ phẩm tái tạo da chuyên sâu Edally EX dùng cho đối tượng nào? (Chị Lan Anh, Hải Dương)</i></strong></p>
+                <p>Edally EX là bộ mỹ phẩm tái tạo làn da làn da được các chuyên gia hàng đầu tại Hàn Quốc nghiên cứu dành riêng cho phụ nữ tuổi 30++. Ở độ tuổi này làn da phụ bắt đầu gặp phải các dấu hiệu lão hóa như: da khô, nếp nhăn, da chảy xệ, tình trạng nám và nhăn da…gây ảnh hưởng nhiều đến thẩm mỹ và đời sống.</p>
+                <p class="yellow-text"><strong><i>8. Tôi là dân văn phòng, ít phải tiếp xúc với khói bụi, ánh nắng nhưng da tôi vẫn bị sạm, không đều màu, tôi phải làm gì? (Chị Nga, Hà Nội)</i></strong></p>
+                <p>Chào bạn!<br/>
+                        Tình trạng sạm da, không đều màu ở da ngoài những tác động từ phía môi trường như: ánh nắng, khói bụi còn có những nguyên nhân khác như: vấn đề tuổi tác khiến nội tiết tố trong cơ thể thay đổi, căng thẳng trong công việc và cuộc sống, mất ngủ, đồ ăn, đồ uống chứa nhiều độc tố cũng gây ra những tác động lớn khiến da bị khô sạm, không đều màu.<br/>
+                        Để khắc phục tình trạng này bạn nên sử dụng các sản phẩm chuyên về chống lão da như Edally EX và bảo vệ da khỏi các tác động xấu từ môi trường đồng thời kết hợp việc tập thể dục, ăn uống điều độ.</p>
+                <p class="yellow-text"><strong><i>9. Tôi đang có nhu cầu sử dụng mỹ phẩm lão hóa da, nhưng không biết chọn loại nào? Không biết Edally EX có được nhiều người sử dụng không ạ? (Chị Hải, Đống Đa, Hà Nội)</i></strong></p>
+                <p>Chào bạn!<br/>
+                        Trên thị trường hiện có rất nhiều mỹ phẩm chống lão hóa da, tuy nhiên đa số các sản phẩm này đều sử dụng các thành phần từ hóa chất hoặc không rõ nguồn gốc, không những không mang lại tác dụng mà còn gây hại cho làn da.<br/>
+                        Không giống như những loại mỹ phẩm thông thường, Edally Ex được chiết xuất từ các dưỡng chất thiên nhiên cao cấp như: rong nho biển, thảo mộc sinh trưởng tự nhiên trên dãy núi Alpes Thụy Sĩ, tinh chất collagen biển tinh khiết 100%, vàng, tổ yến…rất an toàn và hiệu quả.</p>
+                <p class="yellow-text"><strong><i>10. Edally EX có cam kết gì về sản phẩm không ? ( Chị Ly, Hồ Chí Minh)</i></strong></p>
+                <p>Chào bạn!<br/>
+                        Edally EX được chiết xuất từ các thành phần tự nhiên nên tuyệt đối an toàn cho làn da. Chúng tôi cam kết khi bạn sử dụng Edally EX sẽ không gặp phải bất kỳ vấn đề gì nguy hại như: dị ứng, hỏng da…Nếu bạn sử dụng Edally EX mà gặp phải bất kỳ vấn đề gì chúng tôi sẽ chịu mọi phí tổn khắc phục.</p>
+                <div class="edally-img-item-large">
+                    <img src="./assets/images/static/tai-tao-lan-da.jpg" class="img-responsive" alt=""/>
+                </div>
+            </div>
+        </div>
+        <!-- content-wrapper -->
+    </main>
+    <footer>
+        <div class="footer-wrapper">
+            <div class="container">
+                <div class="footer-list">
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-12 col-md-3 footer-item">
+                            <img src="./assets//images/footer/logo1.png" class="img-responsive" alt="footer-logo" />
+                            <p>Thương hiệu mỹ phẩm cao cấp nhập khẩu Hàn Quốc được triệu phụ nữ Việt tin dùng</p>
+                        </div>
+                        <div class="col-xs-12 col-sm-4 col-md-3 footer-item">
+                            <h4 class="footer-title">Edally ex</h4>
+                            <ul class="">
+                                <li><a href="">Trang chủ</a></li>
+                                <li><a href="">Thương hiệu</a></li>
+                                <li><a href="">Sản phẩm</a></li>
+                                <li><a href="">Chuyên gia tư vấn</a></li>
+                                <li><a href="">Đại lý</a></li>
+                                <li><a href="">Blog làm đẹp</a></li>
+                                <li><a href="">Tin tức</a></li>
+                                <li><a href="">Liên hệ</a></li>
+                            </ul>
+                            <img src="./assets/images/footer/bct-note.png" alt="btc" class="img-responsive">
+                        </div>
+                        <div class="col-xs-12 col-sm-4 col-md-3 footer-item">
+                            <h4 class="footer-title">Fanpage Edally EX</h4>
+                            <div class="fb-page" data-href="https://www.facebook.com/Edally.vn/" data-tabs=""
+                                data-width="290" data-height="300" data-small-header="false"
+                                data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true">
+                                <blockquote cite="https://www.facebook.com/Edally.vn/" class="fb-xfbml-parse-ignore"><a
+                                        href="https://www.facebook.com/Edally.vn/">Edally - Mỹ Phẩm Tái Tạo Da Chuyên
+                                        Sâu</a></blockquote>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-4 col-md-3 footer-item">
+                            <h4 class="footer-title">Chính sách và quy định</h4>
+                            <ul>
+                                <li><a href="">Hướng dẫn mua hàng</a></li>
+                                <li><a href="">Chính sách đại lý </a></li>
+                                <li><a href="">Chính sách bảo mật</a></li>
+                                <li><a href="">Chính sách vận chuyển</a></li>
+                                <li><a href="">Quy định thanh toán</a></li>
+                            </ul>
+                            <form class="frm-mail form-inline">
+                                <input type="text" placeholder="Nhập email của bạn" />
+                                <button class="btn-positive btn-yellow btn-send">Gửi</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright">
+            <div class="container">
+                <p>
+                    © Bản quyền thuộc về Edally EX | Cung cấp bởi <a href="http://sapo.vn" target="_blank">Sapo</a>
+                </p>
+            </div>
+        </div>
+        <div class="hot-lines">
+            <a href="tel:1-562-867-5309"><i class="fa fa-phone-alt" aria-hidden="true"></i></a>
+        </div>
+        <a href="#" id="goTop" class="back-to-top"><i class="fa fa-angle-up"></i></a>
+    </footer>
+  
+    <script src="./assets/scripts/jquery-2.1.4.min.js"></script>
+    <script src="./assets/scripts/bootstrap.min.js"></script>
+    <script src="./assets/scripts/owl.carousel.min.js"></script>
+    <script async defer crossorigin="anonymous"
+        src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v4.0"></script>
+
+    <script>
+        function openNav() {
+            document.getElementById("mySidenav").style.width = "300px";
+        }
+
+        function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+        }
+        window.onscroll = function () { fixedMenu() };
+
+        var header = document.getElementById("myHeader");
+        var sticky = header.offsetTop;
+
+        function fixedMenu() {
+            if (window.pageYOffset > sticky) {
+                header.classList.add("sticky");
+            } else {
+                header.classList.remove("sticky");
+            }
+        }
+        $(document).ready(function () {
+            $(".fa-angle-down").click(function () {
+                if ($(this).hasClass('active')) {
+                    $(this).removeClass('active');
+                    $(this).parent().find("ul").addClass('hidden');
+                } else {
+                    $(this).addClass('active');
+                    $(this).parent().children("ul").removeClass('hidden');
+                }
+            })
+            $(".banner-owl-carousel").owlCarousel({
+                nav: true,
+                navText: ["<i class='fa fa-angle-left'></i>", "<i class='fa fa-angle-right'></i>"],
+                slideSpeed: 300,
+                paginationSpeed: 400,
+                items: 1,
+                autoplay: true,
+                rewind: true,
+            });
+            $(".custom-owl-carousel-4").owlCarousel({
+                nav: true,
+                navText: ["<i class='fa fa-angle-left'></i>", "<i class='fa fa-angle-right'></i>"],
+                items: 4,
+                autoplay: true,
+                autoplayTimeout: 1000,
+                autoplayHoverPause: true,
+                rewind: true,
+                dots: false,
+                margin: 30,
+                responsiveClass: true,
+                responsive: {
+                    0: {
+                        items: 1
+                    },
+                    767: {
+                        items: 3
+
+                    },
+                    991: {
+                        items: 4,
+
+                    }
+                }
+            });
+            $(".custom-owl-carousel-3").owlCarousel({
+                nav: true,
+                navText: ["<i class='fa fa-angle-left'></i>", "<i class='fa fa-angle-right'></i>"],
+                items: 3,
+                autoplay: true,
+                autoplayTimeout: 1000,
+                autoplayHoverPause: true,
+                rewind: true,
+                dots: false,
+                margin: 35,
+                responsiveClass: true,
+                responsive: {
+                    0: {
+                        items: 1
+                    },
+                    767: {
+                        items: 3
+
+                    }
+                }
+            })
+            $(window).scroll(function () {
+                if ($(this).scrollTop() > 100) {
+                    $('#goTop').fadeIn();
+                } else {
+                    $('#goTop').fadeOut();
+                }
+            });
+            $('#goTop').click(function () {
+                $("html, body").animate({ scrollTop: 0 }, 600);
+                return false;
+            });
+        });
+
+
+
+    </script>
+</body>
+
+</html>

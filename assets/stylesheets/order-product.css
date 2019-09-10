@@ -1,0 +1,118 @@
+.product-thumbnail a{
+    display: inline-block;
+}
+
+.product-thumbnail img{
+    width: 80px;
+    height: 80px;
+}
+
+.thumbnail{
+    margin-bottom: 0;
+}
+
+.order-product-page .table>tbody>tr>td,
+.order-product-page .table>tbody>tr>th, 
+.order-product-page .table>tfoot>tr>td,
+.order-product-page .table>tfoot>tr>th, 
+.order-product-page .table>thead>tr>td, 
+.order-product-page .table>thead>tr>th {
+    vertical-align: middle;
+    padding: 15px 12px;
+}
+
+.product-remove i{
+    color: #434343;
+}
+
+.product-remove a:hover i{
+    color:#bf2c1f;
+}
+
+.product-subtotal, .product-price{
+    white-space: nowrap;
+}
+
+.total-price{
+    padding: 15px;
+    border: 3px solid #EFEFEF;
+}
+
+.btn-payment{
+    display: inline-block;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: 700;
+    color:#FFF;
+}
+
+.btn-payment:hover{
+    background-color: #f2b111;
+    color:#FFF;
+}
+
+.total-price .bt-solid {
+    border-color: #EFEFEF;
+    width: 100%;
+}
+
+@media only screen and (max-width: 767px){
+    .cart-list .cart-item{
+        position: relative;
+        margin-bottom: 10px;
+    }
+
+    .shop-table.shop-table-responsive{
+        border:0;
+    }
+    
+    .shop-table.shop-table-responsive th,
+    .shop-table.shop-table-responsive thead{
+        display: none;
+    }
+
+    .shop-table.shop-table-responsive tbody, 
+    .shop-table.shop-table-responsive tfoot, 
+    .shop-table.shop-table-responsive tr{
+        display: block;
+
+    }
+
+    .order-product-page .cart-list .table>tbody>tr>td:nth-child(n+3){
+        display: block;  
+        border: 0;
+        padding: 8px;
+    }
+
+    .shop-table-responsive td:before{
+        content: attr(data-title);
+        color: #2d2a2a;
+        font-size: 12px;
+        font-weight: 600;
+        text-transform: uppercase;
+        padding-top: 3px;
+        float: left;        
+    }
+
+    .shop-table-responsive .cart-item td.product-price:after,
+    .shop-table-responsive .cart-item td.product-quantity:after{
+        content: "";
+        border-top: 1px dashed #DDD;
+        display: block;
+        margin-top: 10px;
+        width: 65%;
+    }
+    
+    .order-product-page .cart-list .table>tbody>tr>td.product-remove{
+        position:absolute;
+        top:5px;
+        right: 0;
+        padding: 0;
+    }
+   
+    .cart-item .product-price>span, 
+    .cart-item .product-quantity .quantity input, 
+    .cart-item .product-subtotal>span{
+        margin-left: 15px;
+    }
+}
