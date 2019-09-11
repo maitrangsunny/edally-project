@@ -503,7 +503,62 @@ button:focus{
     color: #434343;
 }
 
+
+/*Footer custom*/
+
+.prefooter-list{
+    background-color: #ECC777;
+    padding: 50px 0;
+    
+}
+
+.prefooter-list .profooter-blue-text{
+    font-size: 16px;
+    font-weight: 700;
+    color: #181F49;
+    text-transform: uppercase;
+}
+
+.prefooter-list .profooter-info-text{
+    font-size: 26px;
+    color: #181f49;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.prefooter-list .row{
+    display: -webkit-flex;
+    display: flex;
+}
+
+.prefooter-list .profooter-white-text{
+    color: #fff;
+    font-size: 15px;
+    text-transform: uppercase;
+}
+
+.prefooter-list form input{
+    background-color: #fff !important;
+}
+
+.prefooter-list .prefooter-item{
+    border-right: 1px solid;
+    padding-left: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.prefooter-list .prefooter-item:last-child{
+    border:none;
+}
+
+.prefooter-list .prefooter-item .prefooter-item-spacing{
+    letter-spacing: 2px;
+}
+
 /* Footer */
+
 .footer-wrapper {
     padding: 50px 0;
     background: #181f49 url(../images/footer/banner-footer.png);
@@ -767,6 +822,10 @@ textarea {
     color:#f2b111;
 }
 
+.white-text{
+    color:#fff;
+}
+
 .bold-text{
     font-weight: 700;
 }
@@ -787,6 +846,7 @@ textarea {
     border:0;    
     border-radius: 5px;
 }
+
 .btn-positive:focus {
     outline: 0;
 }
@@ -853,14 +913,17 @@ input[type=number]
     user-select: none;
     
 }
+
 .quantity-button i{
     color: #f2b111;
     font-size: 10px;
 }
+
 .quantity-button:hover{
     background-color: #f2b111;
     
 }
+
 .quantity-button:hover i{
     color:#FFF;
 }
@@ -1019,9 +1082,23 @@ input[type=number]
         width: 100%;
     }
 
+    .prefooter-list 
+    {
+        text-align: center;
+    }
+
     .footer-wrapper .footer-list .footer-item{
         margin-bottom: 30px;
         text-align: center;
+    }
+
+    .prefooter-list .prefooter-item{
+        border: none;
+        padding: 0 10px;
+    }
+
+    .prefooter-list .row{
+        display: block;
     }
 
     .heading-title>h3{
