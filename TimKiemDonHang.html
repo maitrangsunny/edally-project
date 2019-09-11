@@ -157,11 +157,15 @@
         </div>
     </header>
     <main>
-        <div class="contact-us-page mg-60">
+        <div class="search-orders-page mg-60">
             <div class="container">
-                <div class="edally-search-form">
-                    <p><i class="fa fa-search"> </i>Tìm kiếm đơn hàng</p>
-                    <form>
+                <div class="heading-title">
+                    <h3><a href="#">Trang tìm kiếm đơn hàng</a></h3>
+                    <div class="bt-solid"></div>
+                </div>
+                <div class="edally-search-form mg-30">
+                    <h4><i class="fa fa-search"> </i>&nbsp;Tìm kiếm đơn hàng</h4>
+                    <form class="">
                         <div class="row">
                             <div class="col-sm-6">
                                 <p class="date-title">Từ ngày</p>
@@ -181,18 +185,15 @@
                                     </span> 
                                 </div>
                             </div>
-                            <div class="col-sm-12 mg-30">
-                                <div class="input-group btn-search-result">
-                                    <input class="form-control btn-yellow" type="button" value="Tìm kiếm">
-                                    <div class="input-group-addon">
-                                        <i class="fa fa-search"></i>
-                                    </div>
+                            <div class="col-sm-12">
+                                <div class="search-block">
+                                    <button class="btn-positive btn-yellow btn-search-result" type="button" value="Tìm kiếm">Tìm Kiếm  &nbsp;<i class="fa fa-search"></i></button>                                    
                                 </div>
                             </div>
                         </div>
                     </form>
                     <br/>
-                    <p><i class="fa fa-list-alt"></i>Kết quả tìm kiếm</p>
+                    <h4><i class="fa fa-list-alt"></i>&nbsp;Kết quả tìm kiếm</h4>
                     <div class="result-search-list">
                         <table class="result-table-responsive table table-responsive">
                             <thead>
@@ -204,6 +205,32 @@
                                 </tr>
                             </thead>
                             <tbody>
+                                <tr class="result-item">
+                                    <td class="result-code" data-title="MÃ ĐƠN HÀNG">
+                                        <p>M000001</p>    
+                                        <a href="" class="remove-list">
+                                            <i class="fa fa-times" aria-hidden="true"></i>
+                                            <span>Hủy đơn hàng</span>
+                                        </a>
+                                    </td>
+                                    <td class="result-date" data-title="NGÀY ĐẶT HÀNG">
+                                        <p>10/09/2019</p>
+                                        <p class="product-price" data-title="Giá"><span class="yellow-text">146,620<sup>đ</sup></span></p>
+                                    </td>
+                                    <td class="result-product" data-title="SẢN PHẨM">
+                                        <a href="">
+                                            <img src="./assets/images/products/tinh-chat-vang-24k-edally-01.jpg" class="thumbnail" alt="">
+                                            <p>Bộ Kem Dưỡng Da Pure Hàn Quốc Kem Mộc Qua Và Kem Lộc Nhung</p>
+                                        </a>
+                                        <a href="">
+                                            <img src="./assets/images/products/tinh-chat-vang-24k-edally-01.jpg" class="thumbnail" alt="">
+                                            <p>Bộ Kem Dưỡng Da Pure Hàn Quốc Kem Mộc Qua Và Kem Lộc Nhung</p>
+                                        </a>
+                                    </td>
+                                    <td class="result-status" data-title="TÌNH TRẠNG">
+                                        <p class="yellow-text">Mới đặt hàng</p>
+                                    </td>
+                                </tr>
                                 <tr class="result-item">
                                     <td class="result-code" data-title="MÃ ĐƠN HÀNG">
                                         <p>M000001</p>    

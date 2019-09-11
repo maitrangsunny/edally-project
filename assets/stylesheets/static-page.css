@@ -83,12 +83,16 @@
     border-radius: 5px;
     margin-right: 5px;
 }
-
+.edally-search-form .input-group{
+    margin-bottom: 15px;
+}
 .edally-search-form form{
     border: 1px solid #ddd;
-    padding:10px;
+    padding:30px 15px;
 }
-
+.search-block{
+    text-align: center;
+}
 .edally-search-form .date-title{
     font-weight: 700;
 }
@@ -99,7 +103,9 @@
     background-color: #f2b111 !important;
     color: #fff; 
 }
-
+.result-search-list {
+    margin:20px 0;
+}
 /*css calendar*/
 .edally-search-form .input-group-addon{
     background-color: #fff;
