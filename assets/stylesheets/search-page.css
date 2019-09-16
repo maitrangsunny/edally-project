@@ -1,0 +1,106 @@
+.result-table-responsive .remove-list {
+    color: #d9534f;
+}
+
+.result-table-responsive .remove-list .fa-times{
+    color: #fff;
+    background-color: #d9534f;
+    padding: 4px;
+    border-radius: 5px;
+    margin-right: 5px;
+}
+.edally-search-form .input-group{
+    margin-bottom: 15px;
+}
+.edally-search-form form{
+    border: 1px solid #ddd;
+    padding:30px 15px;
+}
+.search-block{
+    text-align: center;
+}
+.edally-search-form .date-title{
+    font-weight: 700;
+}
+
+.edally-search-form .btn-search-result input,
+.edally-search-form .btn-search-result .input-group-addon {
+    height: 32px;
+    background-color: #f2b111 !important;
+    color: #fff; 
+}
+.result-search-list {
+    margin:20px 0;
+}
+/*css calendar*/
+.edally-search-form .input-group-addon{
+    background-color: #fff;
+    color: #f2b111;
+    border-color: #f2b111;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.result-table-responsive .result-product img{
+    width: 80px;
+    height: 80px;
+}
+
+.result-table-responsive .result-product a {
+    display: table-row;
+}
+
+@media only screen and (max-width: 767px)
+{
+    .result-table-responsive td:before{
+        content: attr(data-title)' :';
+        color: #2d2a2a;
+        font-size: 12px;
+        font-weight: 600;
+        text-transform: uppercase;
+        padding-top: 3px;
+        padding-right: 5px;
+        border: none;
+        float: left;        
+    }
+
+    .result-table-responsive .result-date .product-price:before{
+        content: attr(data-title)' :';
+        color: #2d2a2a;
+        font-size: 12px;
+        font-weight: 600;
+        text-transform: uppercase;
+        padding-top: 3px;
+        padding-right: 5px;
+        float: left; 
+    } 
+
+    .result-table-responsive th,
+    .result-table-responsive thead,
+    .result-table-responsive .remove-list span{
+        display: none;
+    }
+
+    .result-table-responsive tbody, 
+    .result-table-responsive tfoot, 
+    .result-table-responsive tr,
+    .result-table-responsive td{
+        display: block; 
+    }
+
+    .result-table-responsive td{
+        border: none !important;
+    }
+
+    .result-table-responsive .remove-list{
+        position:absolute;
+        top:5px;
+        right: 0;
+        padding: 0;
+    }
+
+    .result-table-responsive .result-item{
+        position: relative;
+        border-top: 1px solid #ddd;
+    }
+}
