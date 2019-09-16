@@ -508,7 +508,7 @@ button:focus{
 
 .prefooter-list{
     background-color: #ECC777;
-    padding: 50px 0;
+    padding: 20px 0;
     
 }
 
@@ -547,6 +547,7 @@ button:focus{
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-self: center;
 }
 
 .prefooter-list .prefooter-item:last-child{
@@ -555,6 +556,14 @@ button:focus{
 
 .prefooter-list .prefooter-item .prefooter-item-spacing{
     letter-spacing: 2px;
+}
+
+.prefooter-list .form-inline .input-group-addon{
+    background-color: #f2b111;
+    color: #fff;
+    border-color: #f2b111;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
 }
 
 /* Footer */
