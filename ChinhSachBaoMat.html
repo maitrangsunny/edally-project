@@ -13,28 +13,108 @@
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- libraries -->
-    <link rel="stylesheet" href="./assets/stylesheets/vendors/normalize.css">
-    <link rel="stylesheet" href="./assets/stylesheets/vendors/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/stylesheets/normalize.css">
+    <link rel="stylesheet" href="./assets/stylesheets/bootstrap.min.css">
     <link rel="stylesheet" href="./assets/stylesheets/all.min.css">
-    <link rel="stylesheet" href="./assets/stylesheets/vendors/owl.carousel.min.css">
+    <link rel="stylesheet" href="./assets/stylesheets/owl.carousel.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto&display=swap">
     <!-- my styles -->
-    <link rel="stylesheet" href="./assets/stylesheets/main.css">
-    <link rel="stylesheet" href="./assets/stylesheets/static-page.css">
+    <link rel="stylesheet" href="./assets/stylesheets/mystyles/main.css">
+    <link rel="stylesheet" href="./assets/stylesheets/mystyles/static-page.css">
 
 </head>
 
 <body>
     <header>
         <div class="header-container" id="myHeader">
-            <div class="top-menu">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12">
+                        <div class="menu-mobile visible-sm visible-xs clearfix">
+                            <a href="javascript:void(0)" class="mobile-bar pull-left"><span
+                                    class="fa fa-bars"></span></a>
+                            <div class="logo hor-logo">
+                                <a href="" class="pull-left"><img src="./assets/images/logo/logo3.png" alt=""
+                                        class="img-responsive" /></a>
+                            </div>
+                            <a href="" class="shopping-cart pull-right"><i class="fa fa-shopping-bag"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="sticky" id="fixMenu">
                 <div class="container">
                     <div class="row">
-                        <div class="col-xs-12 col-sm-12 col-md-3">
-                            <a class="logo" href="#"><img alt="logo" src="./assets/images/logo/logo4.png"
-                                    class="img-responsive" /></a>
+                        <div class="col-xs-12">
+                            <div class="clearfix">
+                                <a href="javascript:void(0)" class="mobile-bar pull-left visible-xs visible-sm"><span
+                                        class="fa fa-bars"></span></a>
+                                <div class="logo hor-logo">
+                                    <a href=""><img src="./assets/images/logo/logo3.png" alt=""
+                                            class="img-responsive" /></a>
+                                </div>
+                                <ul class="navbar-nav hidden-xs hidden-sm">
+                                    <li class="nav-item active">
+                                        <a class="nav-link" href="#">Trang chủ</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">Thương hiệu</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">Sản phẩm<span
+                                                class="glyphicon glyphicon-menu-down"></span></a>
+                                        <ul class="submenu">
+                                            <li><a class="" href="#">Dòng tái sinh, phục hồi</a></li>
+                                            <li><a href="#">Dòng bí mật hoàng cung</a></li>
+                                            <li><a href="#">Dòng trang điểm</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">Chuyên gia tư vấn<span
+                                                class="glyphicon glyphicon-menu-down"></span></a>
+                                        <ul class="submenu">
+                                            <li><a class="" href="#">Chuyên gia tư vấn</a></li>
+                                            <li><a href="#">Chuyên gia tư vấn</a></li>
+                                            <li><a href="#">Chuyên gia tư vấn</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">Đại lý<span
+                                                class="glyphicon glyphicon-menu-down"></span></a>
+                                        <ul class="submenu">
+                                            <li><a class="" href="#">Đại lý</a></li>
+                                            <li><a href="#">Đại lý</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">Blog làm đẹp</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">Tin tức</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">Liên hệ</a>
+                                    </li>
+                                </ul>
+                                <a href="" class="acc-user hidden-sm hidden-xs"><i class="fas fa-user-circle"></i> Đăng
+                                    nhập
+                                </a>
+
+                                <a href="shopping-cart" class="shopping-cart pull-right"><i
+                                        class="fa fa-shopping-bag"></i>
+                                </a>
+
+                            </div>
                         </div>
-                        <div class="col-xs-12 col-sm-12 col-md-5">
+                    </div>
+                </div>
+            </div>
+            <div class="top-menu hidden-sm hidden-xs">
+                <div class="container">
+                    <div class="row">
+
+                        <div class="col-xs-12 col-sm-12 col-md-4">
                             <div class="search-box">
                                 <!-- Search form -->
                                 <form role="search" method="get" class="searchform">
@@ -46,6 +126,20 @@
                                 </form>
                             </div>
                         </div>
+                        <div class="col-xs-12 col-sm-12 col-md-4">
+                            <a class="logo" href="#"><img alt="logo" src="./assets/images/logo/logo4.png"
+                                    class="img-responsive" /></a>
+                        </div>
+                        <div class="col-xs-12 col-sm-12 col-md-4">
+                            <div class="menu-contact-info">
+                                <span class="phone"><i class="fas fa-phone-volume" aria-hidden="true"></i>&nbsp;1900 63
+                                    63 25</span>
+                                <a href="" class="acc-user"><i class="fas fa-user-circle"></i> Đăng nhập
+                                </a>
+                                <a href="" class="shopping-cart"><i class="fa fa-shopping-bag"></i></a>
+                            </div>
+
+                        </div>
                         <span class="mobile-bar visible-sm visible-xs" onclick="openNav()">&#9776;</span>
                     </div>
                 </div>
@@ -54,7 +148,7 @@
                 <div class="container">
                     <div class="row">
                         <div class="col-xs-12">
-                            <div class="" id="navbarNav">
+                            <div class="">
                                 <ul class="navbar-nav">
                                     <li class="nav-item active">
                                         <a class="nav-link" href="#">Trang chủ</a>
@@ -63,7 +157,8 @@
                                         <a class="nav-link" href="#">Thương hiệu</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link" href="#">Sản phẩm</a>
+                                        <a class="nav-link" href="#">Sản phẩm<span
+                                                class="glyphicon glyphicon-menu-down"></span></a>
                                         <ul class="submenu">
                                             <li><a class="" href="#">Dòng tái sinh, phục hồi</a></li>
                                             <li><a href="#">Dòng bí mật hoàng cung</a></li>
@@ -71,7 +166,8 @@
                                         </ul>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link" href="#">Chuyên gia tư vấn</a>
+                                        <a class="nav-link" href="#">Chuyên gia tư vấn<span
+                                                class="glyphicon glyphicon-menu-down"></span></a>
                                         <ul class="submenu">
                                             <li><a class="" href="#">Chuyên gia tư vấn</a></li>
                                             <li><a href="#">Chuyên gia tư vấn</a></li>
@@ -79,7 +175,8 @@
                                         </ul>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link" href="#">Đại lý</a>
+                                        <a class="nav-link" href="#">Đại lý<span
+                                                class="glyphicon glyphicon-menu-down"></span></a>
                                         <ul class="submenu">
                                             <li><a class="" href="#">Đại lý</a></li>
                                             <li><a href="#">Đại lý</a></li>
@@ -102,54 +199,79 @@
             </div>
         </div>
         <!-- menu on mobiles & tablets -->
-        <div class="mobile-menu visible-sm visible-xs" id="mySidenav">
-            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><i class="fa fa-times"></i></a>
-            <ul class="mobile-list mobile-list-level1">
-                <li><a href="/">Trang chủ</a></li>
-                <li><a href="">Thương hiệu</a></li>
-                <li><a href="">Sản phẩm</a>
-                    <i class="fa fa-angle-down" aria-hidden="true"></i>
-                    <ul class="mobile-list-level2 hidden">
-                        <li><a href="">Dòng tái sinh, phục hồi</a></li>
-                        <li><a href="">Dòng bí mật hoàng cung</a></li>
-                        <li><a href="">dòng trang điểm</a></li>
-                    </ul>
-                </li>
-                <li>
-                    <a href="">Chuyên gia tư vấn</a>
-                    <i class="fa fa-angle-down" aria-hidden="true"></i>
-                    <ul class="mobile-list-level2 hidden">
-                        <li>
-                            <a href="">Chuyên gia tư vấn</a>
-                            <i class="fa fa-angle-down" aria-hidden="true"></i>
-                            <ul class="mobile-list-level3 hidden">
-                                <li><a href="">Chuyên gia tư vấn</a></li>
-                                <li><a href="">Đẹp chuẩn chuyên gia</a></li>
-                            </ul>
-                        </li>
-                        <li><a href="">Đẹp chuẩn chuyên gia</a></li>
-                    </ul>
-                </li>
-                <li>
-                    <a href="">Đại lý</a>
-                    <i class="fa fa-angle-down" aria-hidden="true"></i>
-                    <ul class="mobile-list-level2 hidden">
-                        <li><a href="">Chính sách đại lý</a></li>
-                        <li><a href="">Hệ thống phân phối toàn quốc</a></li>
-                        <li><a href="">Câu chuyện đại lý</a></li>
-                        <li><a href="">Đào tạo đại lý</a></li>
-                    </ul>
-                </li>
-                <li>
-                    <a href="">Blog làm đẹp</a>
-                    <i class="fa fa-angle-down" aria-hidden="true"></i>
-                </li>
-                <li><a href="">Tin tức</a>
-                    <i class="fa fa-angle-down" aria-hidden="true"></i>
-                </li>
-                <li><a href="">Liên hệ</a></li>
-            </ul>
+        <div class="mobile-sidebar visible-sm visible-xs" id="mySidenav">
+            <div class="col-xs-12">
+                <div class="mb-login">
+                    <a href=""><i class="fas fa-user-circle"></i>
+                        Đăng nhập
+
+                    </a>
+                </div>
+            </div>
+            <div class="col-xs-12">
+                <div class="search-box">
+                    <!-- Search form -->
+                    <form role="search" method="get" class="searchform">
+                        <input type="text" placeholder="Tìm sản phẩm" value="">
+                        <input type="hidden" name="post_type" value="product">
+                        <button type="submit" class="searchsubmit">
+                            <i class="fa fa-search" aria-hidden="true"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+            <div class="col-xs-12">
+                <ul class="mobile-list mobile-list-level1">
+                    <li><a href="/">Trang chủ</a></li>
+                    <li><a href="">Thương hiệu</a></li>
+                    <li><a href="">Sản phẩm </a>
+                        <span class="glyphicon glyphicon-menu-right mb-arrow"></span>
+                        <ul class="mobile-list-level2">
+                            <li><a href="">Dòng tái sinh, phục hồi</a></li>
+                            <li><a href="">Dòng bí mật hoàng cung</a></li>
+                            <li><a href="">dòng trang điểm</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="">Chuyên gia tư vấn</a>
+                        <span class="glyphicon glyphicon-menu-right mb-arrow"></span>
+
+                        <ul class="mobile-list-level2">
+                            <li>
+                                <a href="">Chuyên gia tư vấn</a>
+                                <span class="glyphicon glyphicon-menu-right mb-arrow"></span>
+
+                                <ul class="mobile-list-level3">
+                                    <li><a href="">Chuyên gia tư vấn</a></li>
+                                    <li><a href="">Đẹp chuẩn chuyên gia</a></li>
+
+                                </ul>
+                            </li>
+                            <li><a href="">Đẹp chuẩn chuyên gia</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="">Đại lý </a>
+                        <span class="glyphicon glyphicon-menu-right mb-arrow"></span>
+                        <ul class="mobile-list-level2">
+                            <li><a href="">Chính sách đại lý</a></li>
+                            <li><a href="">Hệ thống phân phối toàn quốc</a></li>
+                            <li><a href="">Câu chuyện đại lý</a></li>
+                            <li><a href="">Đào tạo đại lý</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="">Blog làm đẹp</a>
+
+                    </li>
+                    <li><a href="">Tin tức</a>
+
+                    </li>
+                    <li><a href="">Liên hệ</a></li>
+                </ul>
+            </div>
         </div>
+        <div class="close-side-overlay"></div>
     </header>
     <!--[if lt IE 7]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
@@ -160,107 +282,278 @@
                 <div class="edally-black-heading">chính sách bảo mật</div>
                 <strong class="uppercase-text">1. Thông báo từ edally.vn:</strong>
                 <ul class="edally-hyphen-list">
-                    <li>Khi truy cập hệ thống trang web Edally.vn, nghĩa là quý khách đồng ý chấp nhận thực hiện những mô tả trong Quy định bảo mật. Nếu quý khách không đồng ý với các điều khoản của Quy định bảo mật, vui lòng không sử dụng hệ thống trang web Edally.vn.</li>
-                    <li>Trong suốt nhiều năm hoạt động của Edally.vn, chúng tôi đã phát triển những mối quan hệ với khách hàng dựa trên sự tôn trọng và niềm tin. Chúng tôi nhận thức được sự tin tưởng và sự tự tin quý khách thể hiện khi truy cập vào hệ thống trang web Edally.vn và cung cấp thông tin cho chúng tôi. Thông báo bảo mật này được đưa ra để thể hiện vai trò của chúng tôi trong vấn đề bảo mật trực tuyến và dịch vụ khách hàng.Chúng tôi xử lý thông tin của quý khách bằng tính trung thực và độ nhạy cảm, điều mà chúng tôi đã thể hiện xuyên suốt lịch sử hình thành phát triển của Edally.vn.</li>
+                    <li>Khi truy cập hệ thống trang web Edally.vn, nghĩa là quý khách đồng ý chấp nhận thực hiện những
+                        mô tả trong Quy định bảo mật. Nếu quý khách không đồng ý với các điều khoản của Quy định bảo
+                        mật, vui lòng không sử dụng hệ thống trang web Edally.vn.</li>
+                    <li>Trong suốt nhiều năm hoạt động của Edally.vn, chúng tôi đã phát triển những mối quan hệ với
+                        khách hàng dựa trên sự tôn trọng và niềm tin. Chúng tôi nhận thức được sự tin tưởng và sự tự tin
+                        quý khách thể hiện khi truy cập vào hệ thống trang web Edally.vn và cung cấp thông tin cho chúng
+                        tôi. Thông báo bảo mật này được đưa ra để thể hiện vai trò của chúng tôi trong vấn đề bảo mật
+                        trực tuyến và dịch vụ khách hàng.Chúng tôi xử lý thông tin của quý khách bằng tính trung thực và
+                        độ nhạy cảm, điều mà chúng tôi đã thể hiện xuyên suốt lịch sử hình thành phát triển của
+                        Edally.vn.</li>
                 </ul>
-                <strong class="uppercase-text">2. Quy định thông tin cá nhân được thu nhập bởi hệ thống website edally.vn (*):</strong>
+                <strong class="uppercase-text">2. Quy định thông tin cá nhân được thu nhập bởi hệ thống website
+                    edally.vn (*):</strong>
                 <ul class="edally-hyphen-list">
-                    <li>Edally.vn sử dụng thông tin thu thập từ khách vãng lai và khách đã đăng ký là thành viên trên hệ thống website Edally.vn để phát triển website ngày càng phong phú hơn, phù hợp với nhu cầu mua sắm của quý khách hơn. Chúng tôi thu thập các loại thông tin sau:</li>
-                    <li><strong>Thông tin Quý khách cung cấp cho chúng tôi:</strong> Chúng tôi thu thập thông tin cá nhân được cung cấp bởi người sử dụng trang web. "Thông tin cá nhân" bao gồm tên, địa chỉ, số điện thoại, thông tin thẻ tín dụng hoặc thẻ ghi nợ, địa chỉ email, ngày sinh, địa chỉ IP…</li>
-                    <li>Thông tin cá nhân được thu thập khi quý khách đăng ký một tài khoản tại hệ thống website Edally.vn, đặt hàng trên website, tham gia những cuộc thi do chúng tôi tổ chức thông qua hệ thống website Edally.vn... hoặc khi quý khách giao tiếp với bất kỳ bộ phận nào của chúng tôi như dịch vụ chăm sóc khách hàng, tư vấn, bán hàng hoặc dịch vụ kỹ thuật thông qua trang web, điện thoại, email, thư tín hoặc fax. Trong một số trường hợp, chúng tôi có thể có được tên và địa chỉ email của người khác mà quý khách chọn để chia sẻ thông tin như “một người bạn” trên hệ thống website Edally.vn.</li>
-                    <li><strong>Cookies:</strong> Thông qua việc sử dụng Cookies, chúng tôi thu thập và phân tích địa chỉ IP được sử dụng để nối kết máy tính của quý khách với internet, máy tính và thông tin kết nối như trình duyệt và phiên bản trình duyệt, hệ điều hành, lịch sử mua hàng, xác nhận khi quý khách mở email mà chúng tôi gửi cho quý khách, ngày giờ và các URL đưa đến với website chúng tôi. Cookie không thể truy cập hoặc phân lượng dữ liệu trong ổ cứng máy tính của quý khách. Thông thường quý khách có thể thiết lập trình duyệt để vô hiệu hóa cookie hay thông báo cho quý khách biết khi được gửi cookie.Hiện nay trên thị trường cũng có sẵn các phần mềm cho phép quý khách truy cập vào trang web mà không cần cung cấp thông tin này. Quý khách vẫn được chào đón để viếng thăm hệ thống website Edally.vn khi quý khách sử dụng phần mềm như vậy, nhưng chúng tôi sẽ không thể cung cấp cho quý khách dịch vụ phù hợp với quý khách và chúng tôi cũng có quyền từ chối đơn đặt hàng trực tuyến từ quý khách khi có nghi ngờ vi phạm bảo mật của chúng tôi.</li>
-                    <li><strong>Đặt hàng:</strong> Nếu quý khách thực hiện mua hàng trực tuyến tại hệ thống website Edally.vn, quý khách sẽ được yêu cầu cung cấp thông tin liên lạc, phương thức thanh toán, thông tin thanh toán và địa chỉ giao hàng. Quý khách vui lòng cung cấp thông tin đúng và đầy đủ để thực hiện xử lý đơn hàng. Nếu có một người nào bên ngoài lợi dụng các thông tin này dẫn đến những sai sót khi giao hàng, chúng tôi sẽ thực hiện điều tra và xử lý. Nếu lỗi do quý khách bị lộ thông tin quý khách phải chịu hoàn toàn trách nhiệm.</li>
-                    <li><strong>Đăng ký nhận bản tin Khuyến mại:</strong> Khi quý khách thực hiện mua hàng tại website Edally.vn, quý khách sẽnhận được những bản tin khuyến mại của Edally.vn, trừ khi quý khách từ chối thông tin này nếu không muốn. Nếu quý khách yêu cầu đăng ký nhận Newsletter qua email, chúng tôi sẽ gửi quý khách một email xác nhận yêu cầu của quý khách. Nếu quý khách thay đổi và quyết định không tham gia vào danh sách nhận Newsletter, quý khách có thể từ chối ngay trong email đó. Hơn nữa, email xác nhận sẽ báo cho quý khách biết nếu có người nào khác đã sử dụng địa chỉ email của quý khách để đăng ký nhận Newsletter của chúng tôi. Để chắc rằng việc gửi Newsletter qua email là hữu ích cho quý khách, vui lòng xác nhận khi quý khách nhận được email  từ chúng tôi. </li>
+                    <li>Edally.vn sử dụng thông tin thu thập từ khách vãng lai và khách đã đăng ký là thành viên trên hệ
+                        thống website Edally.vn để phát triển website ngày càng phong phú hơn, phù hợp với nhu cầu mua
+                        sắm của quý khách hơn. Chúng tôi thu thập các loại thông tin sau:</li>
+                    <li><strong>Thông tin Quý khách cung cấp cho chúng tôi:</strong> Chúng tôi thu thập thông tin cá
+                        nhân được cung cấp bởi người sử dụng trang web. "Thông tin cá nhân" bao gồm tên, địa chỉ, số
+                        điện thoại, thông tin thẻ tín dụng hoặc thẻ ghi nợ, địa chỉ email, ngày sinh, địa chỉ IP…</li>
+                    <li>Thông tin cá nhân được thu thập khi quý khách đăng ký một tài khoản tại hệ thống website
+                        Edally.vn, đặt hàng trên website, tham gia những cuộc thi do chúng tôi tổ chức thông qua hệ
+                        thống website Edally.vn... hoặc khi quý khách giao tiếp với bất kỳ bộ phận nào của chúng tôi như
+                        dịch vụ chăm sóc khách hàng, tư vấn, bán hàng hoặc dịch vụ kỹ thuật thông qua trang web, điện
+                        thoại, email, thư tín hoặc fax. Trong một số trường hợp, chúng tôi có thể có được tên và địa chỉ
+                        email của người khác mà quý khách chọn để chia sẻ thông tin như “một người bạn” trên hệ thống
+                        website Edally.vn.</li>
+                    <li><strong>Cookies:</strong> Thông qua việc sử dụng Cookies, chúng tôi thu thập và phân tích địa
+                        chỉ IP được sử dụng để nối kết máy tính của quý khách với internet, máy tính và thông tin kết
+                        nối như trình duyệt và phiên bản trình duyệt, hệ điều hành, lịch sử mua hàng, xác nhận khi quý
+                        khách mở email mà chúng tôi gửi cho quý khách, ngày giờ và các URL đưa đến với website chúng
+                        tôi. Cookie không thể truy cập hoặc phân lượng dữ liệu trong ổ cứng máy tính của quý khách.
+                        Thông thường quý khách có thể thiết lập trình duyệt để vô hiệu hóa cookie hay thông báo cho quý
+                        khách biết khi được gửi cookie.Hiện nay trên thị trường cũng có sẵn các phần mềm cho phép quý
+                        khách truy cập vào trang web mà không cần cung cấp thông tin này. Quý khách vẫn được chào đón để
+                        viếng thăm hệ thống website Edally.vn khi quý khách sử dụng phần mềm như vậy, nhưng chúng tôi sẽ
+                        không thể cung cấp cho quý khách dịch vụ phù hợp với quý khách và chúng tôi cũng có quyền từ
+                        chối đơn đặt hàng trực tuyến từ quý khách khi có nghi ngờ vi phạm bảo mật của chúng tôi.</li>
+                    <li><strong>Đặt hàng:</strong> Nếu quý khách thực hiện mua hàng trực tuyến tại hệ thống website
+                        Edally.vn, quý khách sẽ được yêu cầu cung cấp thông tin liên lạc, phương thức thanh toán, thông
+                        tin thanh toán và địa chỉ giao hàng. Quý khách vui lòng cung cấp thông tin đúng và đầy đủ để
+                        thực hiện xử lý đơn hàng. Nếu có một người nào bên ngoài lợi dụng các thông tin này dẫn đến
+                        những sai sót khi giao hàng, chúng tôi sẽ thực hiện điều tra và xử lý. Nếu lỗi do quý khách bị
+                        lộ thông tin quý khách phải chịu hoàn toàn trách nhiệm.</li>
+                    <li><strong>Đăng ký nhận bản tin Khuyến mại:</strong> Khi quý khách thực hiện mua hàng tại website
+                        Edally.vn, quý khách sẽnhận được những bản tin khuyến mại của Edally.vn, trừ khi quý khách từ
+                        chối thông tin này nếu không muốn. Nếu quý khách yêu cầu đăng ký nhận Newsletter qua email,
+                        chúng tôi sẽ gửi quý khách một email xác nhận yêu cầu của quý khách. Nếu quý khách thay đổi và
+                        quyết định không tham gia vào danh sách nhận Newsletter, quý khách có thể từ chối ngay trong
+                        email đó. Hơn nữa, email xác nhận sẽ báo cho quý khách biết nếu có người nào khác đã sử dụng địa
+                        chỉ email của quý khách để đăng ký nhận Newsletter của chúng tôi. Để chắc rằng việc gửi
+                        Newsletter qua email là hữu ích cho quý khách, vui lòng xác nhận khi quý khách nhận được email
+                        từ chúng tôi. </li>
                 </ul>
-                <strong class="uppercase-text">3. Quy định sử dụng thông tin thu nhập được:</Strong> 
+                <strong class="uppercase-text">3. Quy định sử dụng thông tin thu nhập được:</Strong>
                 <ul class="edally-hyphen-list">
-                    <li>Chúng tôi sử dụng các thông tin thu thập được từ việc truy cập Website của chúng tôi nhằm mục đích giúp quý khách nâng cao kinh nghiệm mua sắm trực tuyến tại hệ thống website Edally.vn, cung cấp các dịch vụ và thông tin quý khách ưa thích. Chúng tôi cũng sử dụng những thông tin này để giúp phát triển và cải thiện website của chúng tôi trở nên hữu ích và hấp dẫn khách hàng hơn.</li>
+                    <li>Chúng tôi sử dụng các thông tin thu thập được từ việc truy cập Website của chúng tôi nhằm mục
+                        đích giúp quý khách nâng cao kinh nghiệm mua sắm trực tuyến tại hệ thống website Edally.vn, cung
+                        cấp các dịch vụ và thông tin quý khách ưa thích. Chúng tôi cũng sử dụng những thông tin này để
+                        giúp phát triển và cải thiện website của chúng tôi trở nên hữu ích và hấp dẫn khách hàng hơn.
+                    </li>
                 </ul>
-                <strong class="uppercase-text">4. Quy định chia sẻ thông tin với đối tác thứ ba:</strong>     
+                <strong class="uppercase-text">4. Quy định chia sẻ thông tin với đối tác thứ ba:</strong>
                 <ul class="edally-hyphen-list">
-                    <li>Chúng tôi sẽ không thuê, bán hoặc tiết lộ Thông tin cá nhân của quý khách cho bên thứ ba không liên quan mà không có sự đồng ý của quý khách, trừ những điều được nêu trong Thông báo bảo mật cá nhân này.</li>
-                    <li><strong>Các nhà cung cấp dịch vụ:</strong> Chúng tôi có thể thuê các công ty hoặc cá nhân khác cung cấp một số dịch vụ hoặc thay mặt cho chúng tôi trong việc phân tích danh sách và dữ liệu khách hàng, hoặc thực hiện tiếp thị hay thực hiện dịch vụ tư vấn. Các đối tác này ("Nhà cung cấp dịch vụ") sẽ chỉ được tiếp cận với các thông tin cá nhân cần thiết để đại diện chúng tôi thực hiện các chức năng này, và được yêu cầu bảo vệ và bảo mật thông tin của khách hàng như chính chúng tôi. Các đối tác cung cấp dịch vụ đều bị cấm sử dụng thông tin cá nhân của quý khách cho bất kỳ mục đích nào khác. </li>
-                    <li><strong>Các công ty thẻ tín dụng:</strong> Nếu quý khách đặt hàng trên hệ thống website Edally.vn, những thông tin cá nhân mà quý khách cung cấp cho chúng tôi được chuyển đến ngân hàng phát hành thẻ tín dụng của quý khách để thực hiện kiểm tra và xác nhận quyền sử dụng thẻ tín dụng trong thanh toán mua hàng của quý khách. Các thông tin này được hoàn toàn bảo mật và mã hóa để đảm bảo tính an toàn cao nhất khi thanh toán.</li>
-                    <li><strong>Đối tác tiếp thị:</strong> Chúng tôi có thể chia sẻ tên, địa chỉ nhận thư của quý khách với một vài đối tác tiếp thị được chọn lọc kỹ, những đối tác mà chúng tôi tin là sản phẩm hay dịch vụ của họ có thể hữu ích với quý khách. Chúng tôi không bao giờ chia sẻ số điện thoại, địa chỉ email hoặc thông tin thẻ tín dụng mà quý khách đã cung cấp cho chúng tôi với bất kỳ một đối tác tiếp thị nào.</li>
-                    <li><strong>Thông tin tổng hợp:</strong> Chúng tôi cung cấp thông tin tổng hợp cho một số đối tác kinh doanh của chúng tôi. Những thông tin này là những thông tin chung, không phải là thông tin cá nhân của quý khách. Chúng tôi thu thập và chia sẻ thông tin tổng hợp để biết thêm thông tin chung về đối tượng khách hàng của chúng tôi từ đó chúng tôi có thể giúp nâng cao kinh nghiệm mua sắm của quý khách.</li>
-                    <li><strong>Công ty vận chuyển hàng hóa:</strong> Nếu quý khách thực hiện mua hàng tại hệ thống website Edally.vn, tên, số điện thoại và thông tin giao, nhận của quý khách phải được cung cấp cho đối tác giao, nhận của chúng tôi để thực hiện chuyển hàng hóa đến quý khách. Một số trường hợp, hàng hóa sẽ được chuyển trực tiếp từ các nhà cung cấp của chúng tôi đến quý khách.Trong trường hợp này, chỉ có tên, địa chỉ nhận hàng, và số điện thoại của quý khách được cung cấp cho nhà cung cấp với mục đích duy nhất là hoàn thành đơn mua hàng của quý khách.</li>
-                    <li><strong>Dữ liệu thông qua giao dịch của website khác:</strong> Nếu quý khách truy cập website Edally.vn từ một website khác, website của bên thứ ba, website này có thể truy xuất và thu thập thông tin giao dịch của cá nhân quý khách. Để theo dõi và ghi nhận giao dịch của quý khách, website của bên thứ ba có thể cung cấp theo quý khách một mã lệnh, một cookie hay một hình ảnh duy nhất nhằm định danh quý khách. Điều này chỉ xảy ra nếu quý khách liên kết đến hệ thống website Edally.vn thông qua một website khác.Những giao dịch bất kỳ tại hệ thống website Edally.vn mà có mã lệnh như vậy sẽ được gửi báo cáo lại với website đó. Chúng tôi chỉ gửi những thông tin không phải là thông tin cá nhân của quý khách, như ngày thực hiện giao dịch, những sản phẩm quý khách mua, tổng số tiền mua. Chúng tôi sẽ không gửi bất kỳ thông tin nào đến website của bên thứ ba để họ có thể xác định được quý khách là ai. Sự hiện diện của một thanh điều hướng (Navigation bar) trên đầu bất kỳ trang web nào của Edally.vn, điều đó có nghĩa là quý khách đang truy cập website Edally.vn thông qua một website khác, website của bên thứ ba này có thể thấy hoạt động của quý khách trên website chúng tôi.</li>
-                    <li><strong>Liên kết đến website của đối tác:</strong> Hệ thống website Edally.vn chứa nhiều liên kết đến website của các đối tác như các nhà cung cấp của chúng tôi. Chúng tôi không có trách nhiệm hay chịu trách nhiệm về bảo mật thông tin hoặc nội dung hiển thị trên những website này. Chúng tôi khuyến cáo quý khách nên kiểm tra tính bảo mật đối với mỗi website mà quý khách viếng thăm.Việc cung cấp những liên kết đến website của các đối tác thứ ba chỉ nhằm giúp quý khách tham khảo thông tin thuận tiện hơn.</li>
-                    <li><strong>Thực thi pháp luật và bảo vệ người sử dụng:</strong> Trong phạm vi luật pháp cho phép, chúng tôi sẽ tiết lộ những thông tin cá nhân của quý khách cho các cơ quan chính phủ hoặc các bên thứ ba theo yêu cầu pháp lý. Chúng tôi cũng có thể sử dụng hoặc cung cấp thông tin của quý khách theo pháp luật để thực hiện thẩm định phí, báo cáo hoặc thu nợ, chống lại những sự gian lận hoặc bảo vệ quyền lợi của chúng tôi cũng như khách hàng của chúng tôi, hoặc người sử dụng. Quý khách nên biết rằng, sau khi cung cấp cho bên thứ ba, thông tin cá nhân của quý khách có thể được biết bởi những người khác trong phạm vi cho phép hoặc yêu cầu của luật áp dụng.</li>
+                    <li>Chúng tôi sẽ không thuê, bán hoặc tiết lộ Thông tin cá nhân của quý khách cho bên thứ ba không
+                        liên quan mà không có sự đồng ý của quý khách, trừ những điều được nêu trong Thông báo bảo mật
+                        cá nhân này.</li>
+                    <li><strong>Các nhà cung cấp dịch vụ:</strong> Chúng tôi có thể thuê các công ty hoặc cá nhân khác
+                        cung cấp một số dịch vụ hoặc thay mặt cho chúng tôi trong việc phân tích danh sách và dữ liệu
+                        khách hàng, hoặc thực hiện tiếp thị hay thực hiện dịch vụ tư vấn. Các đối tác này ("Nhà cung cấp
+                        dịch vụ") sẽ chỉ được tiếp cận với các thông tin cá nhân cần thiết để đại diện chúng tôi thực
+                        hiện các chức năng này, và được yêu cầu bảo vệ và bảo mật thông tin của khách hàng như chính
+                        chúng tôi. Các đối tác cung cấp dịch vụ đều bị cấm sử dụng thông tin cá nhân của quý khách cho
+                        bất kỳ mục đích nào khác. </li>
+                    <li><strong>Các công ty thẻ tín dụng:</strong> Nếu quý khách đặt hàng trên hệ thống website
+                        Edally.vn, những thông tin cá nhân mà quý khách cung cấp cho chúng tôi được chuyển đến ngân hàng
+                        phát hành thẻ tín dụng của quý khách để thực hiện kiểm tra và xác nhận quyền sử dụng thẻ tín
+                        dụng trong thanh toán mua hàng của quý khách. Các thông tin này được hoàn toàn bảo mật và mã hóa
+                        để đảm bảo tính an toàn cao nhất khi thanh toán.</li>
+                    <li><strong>Đối tác tiếp thị:</strong> Chúng tôi có thể chia sẻ tên, địa chỉ nhận thư của quý khách
+                        với một vài đối tác tiếp thị được chọn lọc kỹ, những đối tác mà chúng tôi tin là sản phẩm hay
+                        dịch vụ của họ có thể hữu ích với quý khách. Chúng tôi không bao giờ chia sẻ số điện thoại, địa
+                        chỉ email hoặc thông tin thẻ tín dụng mà quý khách đã cung cấp cho chúng tôi với bất kỳ một đối
+                        tác tiếp thị nào.</li>
+                    <li><strong>Thông tin tổng hợp:</strong> Chúng tôi cung cấp thông tin tổng hợp cho một số đối tác
+                        kinh doanh của chúng tôi. Những thông tin này là những thông tin chung, không phải là thông tin
+                        cá nhân của quý khách. Chúng tôi thu thập và chia sẻ thông tin tổng hợp để biết thêm thông tin
+                        chung về đối tượng khách hàng của chúng tôi từ đó chúng tôi có thể giúp nâng cao kinh nghiệm mua
+                        sắm của quý khách.</li>
+                    <li><strong>Công ty vận chuyển hàng hóa:</strong> Nếu quý khách thực hiện mua hàng tại hệ thống
+                        website Edally.vn, tên, số điện thoại và thông tin giao, nhận của quý khách phải được cung cấp
+                        cho đối tác giao, nhận của chúng tôi để thực hiện chuyển hàng hóa đến quý khách. Một số trường
+                        hợp, hàng hóa sẽ được chuyển trực tiếp từ các nhà cung cấp của chúng tôi đến quý khách.Trong
+                        trường hợp này, chỉ có tên, địa chỉ nhận hàng, và số điện thoại của quý khách được cung cấp cho
+                        nhà cung cấp với mục đích duy nhất là hoàn thành đơn mua hàng của quý khách.</li>
+                    <li><strong>Dữ liệu thông qua giao dịch của website khác:</strong> Nếu quý khách truy cập website
+                        Edally.vn từ một website khác, website của bên thứ ba, website này có thể truy xuất và thu thập
+                        thông tin giao dịch của cá nhân quý khách. Để theo dõi và ghi nhận giao dịch của quý khách,
+                        website của bên thứ ba có thể cung cấp theo quý khách một mã lệnh, một cookie hay một hình ảnh
+                        duy nhất nhằm định danh quý khách. Điều này chỉ xảy ra nếu quý khách liên kết đến hệ thống
+                        website Edally.vn thông qua một website khác.Những giao dịch bất kỳ tại hệ thống website
+                        Edally.vn mà có mã lệnh như vậy sẽ được gửi báo cáo lại với website đó. Chúng tôi chỉ gửi những
+                        thông tin không phải là thông tin cá nhân của quý khách, như ngày thực hiện giao dịch, những sản
+                        phẩm quý khách mua, tổng số tiền mua. Chúng tôi sẽ không gửi bất kỳ thông tin nào đến website
+                        của bên thứ ba để họ có thể xác định được quý khách là ai. Sự hiện diện của một thanh điều hướng
+                        (Navigation bar) trên đầu bất kỳ trang web nào của Edally.vn, điều đó có nghĩa là quý khách đang
+                        truy cập website Edally.vn thông qua một website khác, website của bên thứ ba này có thể thấy
+                        hoạt động của quý khách trên website chúng tôi.</li>
+                    <li><strong>Liên kết đến website của đối tác:</strong> Hệ thống website Edally.vn chứa nhiều liên
+                        kết đến website của các đối tác như các nhà cung cấp của chúng tôi. Chúng tôi không có trách
+                        nhiệm hay chịu trách nhiệm về bảo mật thông tin hoặc nội dung hiển thị trên những website này.
+                        Chúng tôi khuyến cáo quý khách nên kiểm tra tính bảo mật đối với mỗi website mà quý khách viếng
+                        thăm.Việc cung cấp những liên kết đến website của các đối tác thứ ba chỉ nhằm giúp quý khách
+                        tham khảo thông tin thuận tiện hơn.</li>
+                    <li><strong>Thực thi pháp luật và bảo vệ người sử dụng:</strong> Trong phạm vi luật pháp cho phép,
+                        chúng tôi sẽ tiết lộ những thông tin cá nhân của quý khách cho các cơ quan chính phủ hoặc các
+                        bên thứ ba theo yêu cầu pháp lý. Chúng tôi cũng có thể sử dụng hoặc cung cấp thông tin của quý
+                        khách theo pháp luật để thực hiện thẩm định phí, báo cáo hoặc thu nợ, chống lại những sự gian
+                        lận hoặc bảo vệ quyền lợi của chúng tôi cũng như khách hàng của chúng tôi, hoặc người sử dụng.
+                        Quý khách nên biết rằng, sau khi cung cấp cho bên thứ ba, thông tin cá nhân của quý khách có thể
+                        được biết bởi những người khác trong phạm vi cho phép hoặc yêu cầu của luật áp dụng.</li>
                 </ul>
-                <strong class="uppercase-text">5. Quy định liên kết thành viên:</strong>  
+                <strong class="uppercase-text">5. Quy định liên kết thành viên:</strong>
                 <ul class="edally-hyphen-list">
-                    <li>Chúng tôi duy trì mối quan hệ với các website liên kết của đối tác. Mặc dù chúng tôi không và không thể quản lý các hoạt động của đối tác để điều hành những website đó, nhưng chúng tôi sẽ chấm dứt giao dịch với bất kỳ thành viên có những sai phạm, ví dụ như: gửi thư rác, vi phạm thương hiệu hàng hóa, làm phương tiên lợi dụng để lôi kéo khách viếng thăm, hoặc những hoạt động vi phạm pháp luật. Vui lòng thông báo cho chúng tôi.</li>
+                    <li>Chúng tôi duy trì mối quan hệ với các website liên kết của đối tác. Mặc dù chúng tôi không và
+                        không thể quản lý các hoạt động của đối tác để điều hành những website đó, nhưng chúng tôi sẽ
+                        chấm dứt giao dịch với bất kỳ thành viên có những sai phạm, ví dụ như: gửi thư rác, vi phạm
+                        thương hiệu hàng hóa, làm phương tiên lợi dụng để lôi kéo khách viếng thăm, hoặc những hoạt động
+                        vi phạm pháp luật. Vui lòng thông báo cho chúng tôi.</li>
                 </ul>
-                <strong class="uppercase-text">6. Quy định đối với trẻ em và bảo mật: </strong>  
+                <strong class="uppercase-text">6. Quy định đối với trẻ em và bảo mật: </strong>
                 <ul class="edally-hyphen-list">
-                    <li>Các website thương mại nói chung không phải được thiết kế dành cho trẻ em dưới 13 tuổi. Chúng tôi không cố ý thu thập thông tin cá nhân của trẻ em dưới 13 tuổi mà không có sự kiểm soát của phụ huynh. Nếu quý khách dưới 13 tuổi, xin vui lòng không cung cấp cho chúng tôi bất kỳ thông tin cá nhân gì. Nếu chúng tôi xác định được người dùng có độ tuổi dưới 13 và đã gửi thông tin cá nhân mà không có sự kiểm soát của phụ huynh, chúng tôi sẽ loại bỏ thông tin cá nhân này khỏi dữ liệu của chúng tôi. Chúng tôi hiểu rằng trẻ em có thể không hoàn toàn hiểu tất cả các quy định của Thông báo này, hoặc có những lựa chọn mà website thiết kế chỉ nhằm dành cho người trưởng thành. Chúng tôi khuyến cáo phụ huynh và người giám hộ dành thời gian cùng trẻ em khi trẻ em vào internet và để biết được những trang mà con mình truy cập. Hệ thống website Edally.vn không bán sản phẩm cho người dưới 13 tuổi.Nếu quý khách dưới 13 tuổi, quý khách được yêu cầu phải có sự đồng ý của cha mẹ hoặc người giám hộ để thực hiện mua hàng từ hệ thống website Edally.vn.</li>
+                    <li>Các website thương mại nói chung không phải được thiết kế dành cho trẻ em dưới 13 tuổi. Chúng
+                        tôi không cố ý thu thập thông tin cá nhân của trẻ em dưới 13 tuổi mà không có sự kiểm soát của
+                        phụ huynh. Nếu quý khách dưới 13 tuổi, xin vui lòng không cung cấp cho chúng tôi bất kỳ thông
+                        tin cá nhân gì. Nếu chúng tôi xác định được người dùng có độ tuổi dưới 13 và đã gửi thông tin cá
+                        nhân mà không có sự kiểm soát của phụ huynh, chúng tôi sẽ loại bỏ thông tin cá nhân này khỏi dữ
+                        liệu của chúng tôi. Chúng tôi hiểu rằng trẻ em có thể không hoàn toàn hiểu tất cả các quy định
+                        của Thông báo này, hoặc có những lựa chọn mà website thiết kế chỉ nhằm dành cho người trưởng
+                        thành. Chúng tôi khuyến cáo phụ huynh và người giám hộ dành thời gian cùng trẻ em khi trẻ em vào
+                        internet và để biết được những trang mà con mình truy cập. Hệ thống website Edally.vn không bán
+                        sản phẩm cho người dưới 13 tuổi.Nếu quý khách dưới 13 tuổi, quý khách được yêu cầu phải có sự
+                        đồng ý của cha mẹ hoặc người giám hộ để thực hiện mua hàng từ hệ thống website Edally.vn.</li>
                 </ul>
                 <strong class="uppercase-text">7. Quy định về an ninh:</strong>
                 <ul class="edally-hyphen-list">
-                    <li>Chúng tôi sử dụng công nghệ mã hóa 128-bit trong những trang web có yêu cầu quý khách cung cấp thông tin cá nhân hoặc tài khoản, bao gồm cả những lĩnh vực liên quan đến đặt hàng trực tuyến, tình trạng đặt hàng, những yêu cầu gửi newsletter và các hình thức khuyến mãi.</li>
-                    <li>Website được sử dụng công nghệ Tường lửa (firewall) chuyên nghiệp và kỹ thuật SSL để mã hóa thông tin nhạy cảm của cá nhân quý khách như tên, địa chỉ và thông tin thẻ tín dụng.</li>
-                    <li>Tuy nhiên, quý khách nên biết rằng không có hệ thống máy tính nào là hoàn toàn an toàn và đó là những rủi ro vốn có khi thực hiện các giao dịch trên internet. Để đảm bảo quý khách có các tính năng bảo mật mới nhất trên trình duyệt của mình, quý khách nên tải về phiên bản mới nhất của trình duyệt ưa thích của quý khách phải có hỗ trợ SSL đầy đủ và cần các giải pháp bảo mật cho máy tính của quý khách.</li>
+                    <li>Chúng tôi sử dụng công nghệ mã hóa 128-bit trong những trang web có yêu cầu quý khách cung cấp
+                        thông tin cá nhân hoặc tài khoản, bao gồm cả những lĩnh vực liên quan đến đặt hàng trực tuyến,
+                        tình trạng đặt hàng, những yêu cầu gửi newsletter và các hình thức khuyến mãi.</li>
+                    <li>Website được sử dụng công nghệ Tường lửa (firewall) chuyên nghiệp và kỹ thuật SSL để mã hóa
+                        thông tin nhạy cảm của cá nhân quý khách như tên, địa chỉ và thông tin thẻ tín dụng.</li>
+                    <li>Tuy nhiên, quý khách nên biết rằng không có hệ thống máy tính nào là hoàn toàn an toàn và đó là
+                        những rủi ro vốn có khi thực hiện các giao dịch trên internet. Để đảm bảo quý khách có các tính
+                        năng bảo mật mới nhất trên trình duyệt của mình, quý khách nên tải về phiên bản mới nhất của
+                        trình duyệt ưa thích của quý khách phải có hỗ trợ SSL đầy đủ và cần các giải pháp bảo mật cho
+                        máy tính của quý khách.</li>
                 </ul>
-                <strong class="uppercase-text">8. Quy định sửa đổi/ xóa bỏ/ từ chối thông tin:</strong> 
+                <strong class="uppercase-text">8. Quy định sửa đổi/ xóa bỏ/ từ chối thông tin:</strong>
                 <ul class="edally-hyphen-list">
-                    <li>Nếu tên, địa chỉ email hoặc địa chỉ nhà, số điện thoại hoặc các thông tin cá nhân khác của quý khách có thay đổi, quý khách có thể cập nhật, sửa đổi qua tài khoản của mình ở website Edally.vn hoặc bỏ đi các thông tin có liên quan bằng cách liên hệ với chúng tôi theo email: chamsockhachhang.hb@gmail.com. Ngoài ra, nếu quý khách không muốn tiếp tục nhận thông tin newsletter qua email từ chúng tôi, quý khách vui lòng gửi email đến: chamsockhachhang.hb@gmail.com hoặc bằng cách nhấn chuột vào liên kết không tiếp tục nhận thông tin trong bất kỳ Newsletter email nào mà chúng tôi đã gửi đến quý khách.</li>
+                    <li>Nếu tên, địa chỉ email hoặc địa chỉ nhà, số điện thoại hoặc các thông tin cá nhân khác của quý
+                        khách có thay đổi, quý khách có thể cập nhật, sửa đổi qua tài khoản của mình ở website Edally.vn
+                        hoặc bỏ đi các thông tin có liên quan bằng cách liên hệ với chúng tôi theo email:
+                        chamsockhachhang.hb@gmail.com. Ngoài ra, nếu quý khách không muốn tiếp tục nhận thông tin
+                        newsletter qua email từ chúng tôi, quý khách vui lòng gửi email đến:
+                        chamsockhachhang.hb@gmail.com hoặc bằng cách nhấn chuột vào liên kết không tiếp tục nhận thông
+                        tin trong bất kỳ Newsletter email nào mà chúng tôi đã gửi đến quý khách.</li>
                 </ul>
                 <strong class="uppercase-text">9. Thay đổi về chính sách:</strong>
                 <ul class="edally-hyphen-list">
-                    <li>Nội dung của “Quy định bảo mật” này có thể thay đổi để phù hợp với các nhu cầu của Edally.vn cũng như nhu cầu và sự phản hồi từ khách hàng nếu có mà không cần báo trước. Khi cập nhật nội dung chính sách này, chúng tôi sẽ chỉnh sửa lại thời gian “Cập nhật lần cuối” bên trên.</li>
-                    <li>Nội dung “Quy định bảo mật” này chỉ áp dụng tại Edally.vn, không bao gồm hoặc liên quan đến các bên thứ ba đặt quảng cáo hay có links tại Edally.vn. Do đó, chúng tôi đề nghị bạn đọc và tham khảo kỹ nội dung “Quy định bảo mật” của từng website mà bạn đang truy cập.</li>
+                    <li>Nội dung của “Quy định bảo mật” này có thể thay đổi để phù hợp với các nhu cầu của Edally.vn
+                        cũng như nhu cầu và sự phản hồi từ khách hàng nếu có mà không cần báo trước. Khi cập nhật nội
+                        dung chính sách này, chúng tôi sẽ chỉnh sửa lại thời gian “Cập nhật lần cuối” bên trên.</li>
+                    <li>Nội dung “Quy định bảo mật” này chỉ áp dụng tại Edally.vn, không bao gồm hoặc liên quan đến các
+                        bên thứ ba đặt quảng cáo hay có links tại Edally.vn. Do đó, chúng tôi đề nghị bạn đọc và tham
+                        khảo kỹ nội dung “Quy định bảo mật” của từng website mà bạn đang truy cập.</li>
                 </ul>
             </div>
         </div>
         <!-- content-wrapper -->
     </main>
     <footer>
+        <div class="prefooter-list">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12 col-sm-3 col-md-3 prefooter-item">
+                        <p class="white-text profooter-white-text">HOTLINE 24/7</p>
+                        <p class="profooter-info-text">1900 636325</p>
+                        <span class="white-text prefooter-item-spacing"></span>
+                    </div>
+                    <div class="col-xs-12 col-sm-3 col-md-3 prefooter-item">
+                        <p class="white-text profooter-white-text">Hỗ trợ đại lý:</p>
+                        <p class="profooter-info-text">0919 636325</p>
+                        <span class="white-text prefooter-item-spacing"></span>
+                    </div>
+
+                    <div class="col-xs-12 col-sm-3 col-md-3 prefooter-item">
+                        <p class="white-text profooter-white-text">Showroom:</p>
+                        <p class="profooter-info-text">27 Xuân Hồng, P.12, Q. Tân Bình</p>
+                        <span class="white-text prefooter-item-spacing"></span>
+                    </div>
+                    <div class="col-xs-12 col-sm-3 col-md-3 prefooter-item">
+                        <p class="profooter-blue-text">NHẬN VOUCHER TRỊ GIÁ 50K</p>
+                        <p class="white-text">Nhập số điện thoại của bạn và nhận ngay mã voucher trị giá 50.000đ, áp
+                            dụng cho khách hàng mới</p>
+                        <form class="form-inline">
+                            <div class="input-group">
+                                <input class="form-control" placeholder="Nhập số điện thoại" type="number">
+                                <span class="input-group-addon">
+                                    <i class="fa fa-location-arrow"></i>
+                                </span>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
         <div class="footer-wrapper">
             <div class="container">
                 <div class="footer-list">
                     <div class="row">
-                        <div class="col-xs-12 col-sm-12 col-md-3 footer-item">
-                            <img src="./assets//images/footer/logo1.png" class="img-responsive" alt="footer-logo" />
-                            <p>Thương hiệu mỹ phẩm cao cấp nhập khẩu Hàn Quốc được triệu phụ nữ Việt tin dùng</p>
+                        <div class="col-xs-12 col-sm-4 col-md-4 footer-item">
+                            <div class="info-company">
+                                <img src="./assets//images/footer/logo1.png" class="img-responsive" alt="footer-logo" />
+                                <p>Thương hiệu mỹ phẩm cao cấp nhập khẩu Hàn Quốc được triệu phụ nữ Việt tin dùng</p>
+                                <ul>
+                                    <li>
+                                        <p><i class="fa fa-arrow-circle-up" aria-hidden="true"></i><span
+                                                class="yellow-text"> Giấy phép kinh doanh: </span>0106062221</p>
+                                    </li>
+                                    <li>
+                                        <p><i class="fas fa-phone-volume"></i><span class="yellow-text"> Hotline:
+                                            </span>09.6969.0625 <span class="yellow-text">(Tư vấn mua hàng)</span> -
+                                            09.6969.0625<span class="yellow-text"> (Hỗ trợ đại lý)</span></p>
+                                    </li>
+                                    <li>
+                                        <p><i class="far fa-envelope"></i><span class="yellow-text"> Email:
+                                            </span>Edallyex@gmail.com</p>
+                                    </li>
+                                    <li>
+                                        <p><i class="fas fa-map-marker-alt"></i><span class="yellow-text"> Địa chỉ:
+                                            </span>Tòa nhà Viwaseen, số 48 Tố Hữu, Trung Văn, Hà Nội (Có chỗ đậu xe hơi
+                                            cho khác đến tham quan và mua sắm)</p>
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
-                        <div class="col-xs-12 col-sm-4 col-md-3 footer-item">
-                            <h4 class="footer-title">Edally ex</h4>
-                            <ul class="">
-                                <li><a href="">Trang chủ</a></li>
-                                <li><a href="">Thương hiệu</a></li>
-                                <li><a href="">Sản phẩm</a></li>
-                                <li><a href="">Chuyên gia tư vấn</a></li>
-                                <li><a href="">Đại lý</a></li>
-                                <li><a href="">Blog làm đẹp</a></li>
-                                <li><a href="">Tin tức</a></li>
-                                <li><a href="">Liên hệ</a></li>
+                        <div class="col-xs-12 col-sm-4 col-md-4 footer-item">
+                            <h4 class="footer-title">Chính sách và quy định</h4>
+                            <ul>
+                                <li><a href="">Chính sách bảo mật</a></li>
+                                <li><a href="">Chính sách đại lý </a></li>
+                                <li><a href="">Hướng dẫn mua hàng</a></li>
+                                <li><a href="">Chính sách vận chuyển</a></li>
+                                <li><a href="">Quy định thanh toán</a></li>
                             </ul>
+                            <br />
+                            <form class="form-inline">
+                                <input type="text" placeholder="Nhập email của bạn" />
+                                <button class="btn-positive btn-yellow btn-send">Gửi</button>
+                            </form>
+                            <br />
                             <img src="./assets/images/footer/bct-note.png" alt="btc" class="img-responsive">
                         </div>
-                        <div class="col-xs-12 col-sm-4 col-md-3 footer-item">
+                        <div class="col-xs-12 col-sm-4 col-md-4 footer-item">
                             <h4 class="footer-title">Fanpage Edally EX</h4>
                             <div class="fb-page" data-href="https://www.facebook.com/Edally.vn/" data-tabs=""
-                                data-width="290" data-height="300" data-small-header="false"
+                                data-width="220" data-height="300" data-small-header="false"
                                 data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true">
                                 <blockquote cite="https://www.facebook.com/Edally.vn/" class="fb-xfbml-parse-ignore"><a
                                         href="https://www.facebook.com/Edally.vn/">Edally - Mỹ Phẩm Tái Tạo Da Chuyên
                                         Sâu</a></blockquote>
                             </div>
-                        </div>
-                        <div class="col-xs-12 col-sm-4 col-md-3 footer-item">
-                            <h4 class="footer-title">Chính sách và quy định</h4>
-                            <ul>
-                                <li><a href="">Hướng dẫn mua hàng</a></li>
-                                <li><a href="">Chính sách đại lý </a></li>
-                                <li><a href="">Chính sách bảo mật</a></li>
-                                <li><a href="">Chính sách vận chuyển</a></li>
-                                <li><a href="">Quy định thanh toán</a></li>
-                            </ul>
-                            <form class="frm-mail form-inline">
-                                <input type="text" placeholder="Nhập email của bạn" />
-                                <button class="btn-positive btn-yellow btn-send">Gửi</button>
-                            </form>
                         </div>
                     </div>
                 </div>
@@ -278,114 +571,14 @@
         </div>
         <a href="#" id="goTop" class="back-to-top"><i class="fa fa-angle-up"></i></a>
     </footer>
-  
+
     <script src="./assets/scripts/jquery-2.1.4.min.js"></script>
     <script src="./assets/scripts/bootstrap.min.js"></script>
     <script src="./assets/scripts/owl.carousel.min.js"></script>
     <script async defer crossorigin="anonymous"
         src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v4.0"></script>
 
-    <script>
-        function openNav() {
-            document.getElementById("mySidenav").style.width = "300px";
-        }
-
-        function closeNav() {
-            document.getElementById("mySidenav").style.width = "0";
-        }
-        window.onscroll = function () { fixedMenu() };
-
-        var header = document.getElementById("myHeader");
-        var sticky = header.offsetTop;
-
-        function fixedMenu() {
-            if (window.pageYOffset > sticky) {
-                header.classList.add("sticky");
-            } else {
-                header.classList.remove("sticky");
-            }
-        }
-        $(document).ready(function () {
-            $(".fa-angle-down").click(function () {
-                if ($(this).hasClass('active')) {
-                    $(this).removeClass('active');
-                    $(this).parent().find("ul").addClass('hidden');
-                } else {
-                    $(this).addClass('active');
-                    $(this).parent().children("ul").removeClass('hidden');
-                }
-            })
-            $(".banner-owl-carousel").owlCarousel({
-                nav: true,
-                navText: ["<i class='fa fa-angle-left'></i>", "<i class='fa fa-angle-right'></i>"],
-                slideSpeed: 300,
-                paginationSpeed: 400,
-                items: 1,
-                autoplay: true,
-                rewind: true,
-            });
-            $(".custom-owl-carousel-4").owlCarousel({
-                nav: true,
-                navText: ["<i class='fa fa-angle-left'></i>", "<i class='fa fa-angle-right'></i>"],
-                items: 4,
-                autoplay: true,
-                autoplayTimeout: 1000,
-                autoplayHoverPause: true,
-                rewind: true,
-                dots: false,
-                margin: 30,
-                responsiveClass: true,
-                responsive: {
-                    0: {
-                        items: 1
-                    },
-                    767: {
-                        items: 3
-
-                    },
-                    991: {
-                        items: 4,
-
-                    }
-                }
-            });
-            $(".custom-owl-carousel-3").owlCarousel({
-                nav: true,
-                navText: ["<i class='fa fa-angle-left'></i>", "<i class='fa fa-angle-right'></i>"],
-                items: 3,
-                autoplay: true,
-                autoplayTimeout: 1000,
-                autoplayHoverPause: true,
-                rewind: true,
-                dots: false,
-                margin: 35,
-                responsiveClass: true,
-                responsive: {
-                    0: {
-                        items: 1
-                    },
-                    767: {
-                        items: 3
-
-                    }
-                }
-            })
-            $(window).scroll(function () {
-                if ($(this).scrollTop() > 100) {
-                    $('#goTop').fadeIn();
-                } else {
-                    $('#goTop').fadeOut();
-                }
-            });
-            $('#goTop').click(function () {
-                $("html, body").animate({ scrollTop: 0 }, 600);
-                return false;
-            });
-        });
-
-
-
-    </script>
+    <script src="./assets/scripts/main.js"></script>
 </body>
 
 </html>

@@ -13,28 +13,108 @@
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- libraries -->
-    <link rel="stylesheet" href="./assets/stylesheets/vendors/normalize.css">
-    <link rel="stylesheet" href="./assets/stylesheets/vendors/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/stylesheets/normalize.css">
+    <link rel="stylesheet" href="./assets/stylesheets/bootstrap.min.css">
     <link rel="stylesheet" href="./assets/stylesheets/all.min.css">
-    <link rel="stylesheet" href="./assets/stylesheets/vendors/owl.carousel.min.css">
+    <link rel="stylesheet" href="./assets/stylesheets/owl.carousel.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto&display=swap">
     <!-- my styles -->
-    <link rel="stylesheet" href="./assets/stylesheets/main.css">
-    <link rel="stylesheet" href="./assets/stylesheets/static-page.css">
+    <link rel="stylesheet" href="./assets/stylesheets/mystyles/main.css">
+    <link rel="stylesheet" href="./assets/stylesheets/mystyles/static-page.css">
 
 </head>
 
 <body>
     <header>
         <div class="header-container" id="myHeader">
-            <div class="top-menu">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12">
+                        <div class="menu-mobile visible-sm visible-xs clearfix">
+                            <a href="javascript:void(0)" class="mobile-bar pull-left"><span
+                                    class="fa fa-bars"></span></a>
+                            <div class="logo hor-logo">
+                                <a href="" class="pull-left"><img src="./assets/images/logo/logo3.png" alt=""
+                                        class="img-responsive" /></a>
+                            </div>
+                            <a href="" class="shopping-cart pull-right"><i class="fa fa-shopping-bag"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="sticky" id="fixMenu">
                 <div class="container">
                     <div class="row">
-                        <div class="col-xs-12 col-sm-12 col-md-3">
-                            <a class="logo" href="#"><img alt="logo" src="./assets/images/logo/logo4.png"
-                                    class="img-responsive" /></a>
+                        <div class="col-xs-12">
+                            <div class="clearfix">
+                                <a href="javascript:void(0)" class="mobile-bar pull-left visible-xs visible-sm"><span
+                                        class="fa fa-bars"></span></a>
+                                <div class="logo hor-logo">
+                                    <a href=""><img src="./assets/images/logo/logo3.png" alt=""
+                                            class="img-responsive" /></a>
+                                </div>
+                                <ul class="navbar-nav hidden-xs hidden-sm">
+                                    <li class="nav-item active">
+                                        <a class="nav-link" href="#">Trang chủ</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">Thương hiệu</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">Sản phẩm<span
+                                                class="glyphicon glyphicon-menu-down"></span></a>
+                                        <ul class="submenu">
+                                            <li><a class="" href="#">Dòng tái sinh, phục hồi</a></li>
+                                            <li><a href="#">Dòng bí mật hoàng cung</a></li>
+                                            <li><a href="#">Dòng trang điểm</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">Chuyên gia tư vấn<span
+                                                class="glyphicon glyphicon-menu-down"></span></a>
+                                        <ul class="submenu">
+                                            <li><a class="" href="#">Chuyên gia tư vấn</a></li>
+                                            <li><a href="#">Chuyên gia tư vấn</a></li>
+                                            <li><a href="#">Chuyên gia tư vấn</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">Đại lý<span
+                                                class="glyphicon glyphicon-menu-down"></span></a>
+                                        <ul class="submenu">
+                                            <li><a class="" href="#">Đại lý</a></li>
+                                            <li><a href="#">Đại lý</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">Blog làm đẹp</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">Tin tức</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">Liên hệ</a>
+                                    </li>
+                                </ul>
+                                <a href="" class="acc-user hidden-sm hidden-xs"><i class="fas fa-user-circle"></i> Đăng
+                                    nhập
+                                </a>
+
+                                <a href="shopping-cart" class="shopping-cart pull-right"><i
+                                        class="fa fa-shopping-bag"></i>
+                                </a>
+
+                            </div>
                         </div>
-                        <div class="col-xs-12 col-sm-12 col-md-5">
+                    </div>
+                </div>
+            </div>
+            <div class="top-menu hidden-sm hidden-xs">
+                <div class="container">
+                    <div class="row">
+
+                        <div class="col-xs-12 col-sm-12 col-md-4">
                             <div class="search-box">
                                 <!-- Search form -->
                                 <form role="search" method="get" class="searchform">
@@ -46,6 +126,20 @@
                                 </form>
                             </div>
                         </div>
+                        <div class="col-xs-12 col-sm-12 col-md-4">
+                            <a class="logo" href="#"><img alt="logo" src="./assets/images/logo/logo4.png"
+                                    class="img-responsive" /></a>
+                        </div>
+                        <div class="col-xs-12 col-sm-12 col-md-4">
+                            <div class="menu-contact-info">
+                                <span class="phone"><i class="fas fa-phone-volume" aria-hidden="true"></i>&nbsp;1900 63
+                                    63 25</span>
+                                <a href="" class="acc-user"><i class="fas fa-user-circle"></i> Đăng nhập
+                                </a>
+                                <a href="" class="shopping-cart"><i class="fa fa-shopping-bag"></i></a>
+                            </div>
+
+                        </div>
                         <span class="mobile-bar visible-sm visible-xs" onclick="openNav()">&#9776;</span>
                     </div>
                 </div>
@@ -54,7 +148,7 @@
                 <div class="container">
                     <div class="row">
                         <div class="col-xs-12">
-                            <div class="" id="navbarNav">
+                            <div class="">
                                 <ul class="navbar-nav">
                                     <li class="nav-item active">
                                         <a class="nav-link" href="#">Trang chủ</a>
@@ -63,7 +157,8 @@
                                         <a class="nav-link" href="#">Thương hiệu</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link" href="#">Sản phẩm</a>
+                                        <a class="nav-link" href="#">Sản phẩm<span
+                                                class="glyphicon glyphicon-menu-down"></span></a>
                                         <ul class="submenu">
                                             <li><a class="" href="#">Dòng tái sinh, phục hồi</a></li>
                                             <li><a href="#">Dòng bí mật hoàng cung</a></li>
@@ -71,7 +166,8 @@
                                         </ul>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link" href="#">Chuyên gia tư vấn</a>
+                                        <a class="nav-link" href="#">Chuyên gia tư vấn<span
+                                                class="glyphicon glyphicon-menu-down"></span></a>
                                         <ul class="submenu">
                                             <li><a class="" href="#">Chuyên gia tư vấn</a></li>
                                             <li><a href="#">Chuyên gia tư vấn</a></li>
@@ -79,7 +175,8 @@
                                         </ul>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link" href="#">Đại lý</a>
+                                        <a class="nav-link" href="#">Đại lý<span
+                                                class="glyphicon glyphicon-menu-down"></span></a>
                                         <ul class="submenu">
                                             <li><a class="" href="#">Đại lý</a></li>
                                             <li><a href="#">Đại lý</a></li>
@@ -102,54 +199,79 @@
             </div>
         </div>
         <!-- menu on mobiles & tablets -->
-        <div class="mobile-menu visible-sm visible-xs" id="mySidenav">
-            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><i class="fa fa-times"></i></a>
-            <ul class="mobile-list mobile-list-level1">
-                <li><a href="/">Trang chủ</a></li>
-                <li><a href="">Thương hiệu</a></li>
-                <li><a href="">Sản phẩm</a>
-                    <i class="fa fa-angle-down" aria-hidden="true"></i>
-                    <ul class="mobile-list-level2 hidden">
-                        <li><a href="">Dòng tái sinh, phục hồi</a></li>
-                        <li><a href="">Dòng bí mật hoàng cung</a></li>
-                        <li><a href="">dòng trang điểm</a></li>
-                    </ul>
-                </li>
-                <li>
-                    <a href="">Chuyên gia tư vấn</a>
-                    <i class="fa fa-angle-down" aria-hidden="true"></i>
-                    <ul class="mobile-list-level2 hidden">
-                        <li>
-                            <a href="">Chuyên gia tư vấn</a>
-                            <i class="fa fa-angle-down" aria-hidden="true"></i>
-                            <ul class="mobile-list-level3 hidden">
-                                <li><a href="">Chuyên gia tư vấn</a></li>
-                                <li><a href="">Đẹp chuẩn chuyên gia</a></li>
-                            </ul>
-                        </li>
-                        <li><a href="">Đẹp chuẩn chuyên gia</a></li>
-                    </ul>
-                </li>
-                <li>
-                    <a href="">Đại lý</a>
-                    <i class="fa fa-angle-down" aria-hidden="true"></i>
-                    <ul class="mobile-list-level2 hidden">
-                        <li><a href="">Chính sách đại lý</a></li>
-                        <li><a href="">Hệ thống phân phối toàn quốc</a></li>
-                        <li><a href="">Câu chuyện đại lý</a></li>
-                        <li><a href="">Đào tạo đại lý</a></li>
-                    </ul>
-                </li>
-                <li>
-                    <a href="">Blog làm đẹp</a>
-                    <i class="fa fa-angle-down" aria-hidden="true"></i>
-                </li>
-                <li><a href="">Tin tức</a>
-                    <i class="fa fa-angle-down" aria-hidden="true"></i>
-                </li>
-                <li><a href="">Liên hệ</a></li>
-            </ul>
+        <div class="mobile-sidebar visible-sm visible-xs" id="mySidenav">
+            <div class="col-xs-12">
+                <div class="mb-login">
+                    <a href=""><i class="fas fa-user-circle"></i>
+                        Đăng nhập
+
+                    </a>
+                </div>
+            </div>
+            <div class="col-xs-12">
+                <div class="search-box">
+                    <!-- Search form -->
+                    <form role="search" method="get" class="searchform">
+                        <input type="text" placeholder="Tìm sản phẩm" value="">
+                        <input type="hidden" name="post_type" value="product">
+                        <button type="submit" class="searchsubmit">
+                            <i class="fa fa-search" aria-hidden="true"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+            <div class="col-xs-12">
+                <ul class="mobile-list mobile-list-level1">
+                    <li><a href="/">Trang chủ</a></li>
+                    <li><a href="">Thương hiệu</a></li>
+                    <li><a href="">Sản phẩm </a>
+                        <span class="glyphicon glyphicon-menu-right mb-arrow"></span>
+                        <ul class="mobile-list-level2">
+                            <li><a href="">Dòng tái sinh, phục hồi</a></li>
+                            <li><a href="">Dòng bí mật hoàng cung</a></li>
+                            <li><a href="">dòng trang điểm</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="">Chuyên gia tư vấn</a>
+                        <span class="glyphicon glyphicon-menu-right mb-arrow"></span>
+
+                        <ul class="mobile-list-level2">
+                            <li>
+                                <a href="">Chuyên gia tư vấn</a>
+                                <span class="glyphicon glyphicon-menu-right mb-arrow"></span>
+
+                                <ul class="mobile-list-level3">
+                                    <li><a href="">Chuyên gia tư vấn</a></li>
+                                    <li><a href="">Đẹp chuẩn chuyên gia</a></li>
+
+                                </ul>
+                            </li>
+                            <li><a href="">Đẹp chuẩn chuyên gia</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="">Đại lý </a>
+                        <span class="glyphicon glyphicon-menu-right mb-arrow"></span>
+                        <ul class="mobile-list-level2">
+                            <li><a href="">Chính sách đại lý</a></li>
+                            <li><a href="">Hệ thống phân phối toàn quốc</a></li>
+                            <li><a href="">Câu chuyện đại lý</a></li>
+                            <li><a href="">Đào tạo đại lý</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="">Blog làm đẹp</a>
+
+                    </li>
+                    <li><a href="">Tin tức</a>
+
+                    </li>
+                    <li><a href="">Liên hệ</a></li>
+                </ul>
+            </div>
         </div>
+        <div class="close-side-overlay"></div>
     </header>
     <!--[if lt IE 7]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
@@ -159,108 +281,202 @@
             <div class="container">
                 <div class="edally-black-heading">Câu chuyện Edally EX</div>
                 <p class="yellow-text multilevel">EDALLY EX - SỨ MỆNH CHINH PHỤC VẺ ĐẸP BỀN VỮNG </p>
-                <p>Edally EX là bộ mỹ phẩm được nghiên cứu dành riêng cho phụ nữ tuổi 30+ bởi các chuyên gia hàng đầu tại Hàn Quốc. Edally EX không những mang lại vẻ đẹp hoàn hảo bên ngoài mà còn đem đến sự khỏe mạnh từ sâu bên trong làn da.<br/>
-                    Edally EX giúp ngăn ngừa tận gốc các nguyên nhân gây nên tình trạng lão hóa da, giúp chị em phụ nữ luôn trẻ đẹp, rạng rỡ và tự tin. Edally EX chính là một bước đột phá mới đồng hành cùng chị em phụ nữ trong hành trình chinh phục vẻ đẹp bền vững.
+                <p>Edally EX là bộ mỹ phẩm được nghiên cứu dành riêng cho phụ nữ tuổi 30+ bởi các chuyên gia hàng đầu
+                    tại Hàn Quốc. Edally EX không những mang lại vẻ đẹp hoàn hảo bên ngoài mà còn đem đến sự khỏe mạnh
+                    từ sâu bên trong làn da.<br />
+                    Edally EX giúp ngăn ngừa tận gốc các nguyên nhân gây nên tình trạng lão hóa da, giúp chị em phụ nữ
+                    luôn trẻ đẹp, rạng rỡ và tự tin. Edally EX chính là một bước đột phá mới đồng hành cùng chị em phụ
+                    nữ trong hành trình chinh phục vẻ đẹp bền vững.
                 </p>
                 <div class="edally-img-item">
-                    <img src="./assets/images/static/ve-dep-ben-vung.png" alt="" class="img-responsive"/>
+                    <img src="./assets/images/static/ve-dep-ben-vung.png" alt="" class="img-responsive" />
                 </div>
-                <p class="yellow-text multilevel">EDALLY EX - ĐƯỢC NGHIÊN CỨU VÀ SẢN XUẤT TỪ 2 NHÀ MÁY HÀNG ĐẦU TẠI HÀN QUỐC</p>
-                <p>Edally EX được sản xuất trên dây chuyền công nghệ hiện đại từ hai nhà máy hàng đầu tại Hàn Quốc là: Cosmax và Coreana. Cosmax và Coreana là nhà máy sản xuất cho nhiều thương hiệu mỹ phẩm nổi tiếng như: Lancome, L'oreal, ShuUemura, Amorepacific, Ohui, Whoo...Từ khâu phát triên sản phẩm mới, tính hiệu quả, độ an toàn, quản lý chất lượng Cosmax và Coreana đều theo dõi rất gắt gao trước khi gửi tới người tiêu dùng.</p>
+                <p class="yellow-text multilevel">EDALLY EX - ĐƯỢC NGHIÊN CỨU VÀ SẢN XUẤT TỪ 2 NHÀ MÁY HÀNG ĐẦU TẠI HÀN
+                    QUỐC</p>
+                <p>Edally EX được sản xuất trên dây chuyền công nghệ hiện đại từ hai nhà máy hàng đầu tại Hàn Quốc là:
+                    Cosmax và Coreana. Cosmax và Coreana là nhà máy sản xuất cho nhiều thương hiệu mỹ phẩm nổi tiếng
+                    như: Lancome, L'oreal, ShuUemura, Amorepacific, Ohui, Whoo...Từ khâu phát triên sản phẩm mới, tính
+                    hiệu quả, độ an toàn, quản lý chất lượng Cosmax và Coreana đều theo dõi rất gắt gao trước khi gửi
+                    tới người tiêu dùng.</p>
                 <div class="edally-img-item">
-                    <img src="./assets/images/static/cosmax.jpg" alt="" class="img-responsive"/><br/>
-                    <img src="./assets/images/static/nha-may-edally.jpg" alt="" class="img-responsive"/><br/>
-                    <img src="./assets/images/static/thuong-hieu.jpg" alt="" class="img-responsive"/>
+                    <img src="./assets/images/static/cosmax.jpg" alt="" class="img-responsive" /><br />
+                    <img src="./assets/images/static/nha-may-edally.jpg" alt="" class="img-responsive" /><br />
+                    <img src="./assets/images/static/thuong-hieu.jpg" alt="" class="img-responsive" />
                 </div>
-                <p class="yellow-text multilevel">EDALLY EX - CHIẾT XUẤT TỪ 4 DƯỠNG CHẤT THIÊN NHIÊN CAO CẤP VÀ QUÝ HIẾM</p>
-                <p>Mỹ phẩm tái tạo da chuyên sâu Edally EX được chiết xuất từ 4 dưỡng chất thiên nhiên cao cấp và quý hiếm:<span class="yellow-text">Vàng</span>  có tác dụng kích thích lưu thông máu, kích hoạt tế bào da, thúc đẩy mạnh mẽ quá trình tái tạo tế bào da mới. <span class="yellow-text">Tổ yến</span> chính là bí quyết chăm sóc da được truyền lại của Từ Hy Thái Hậu, giúp hình thành Collagen và Elastin, là 2 chất giúp tạo nên cấu trúc nền da, kết hợp Glycine giúp ngăn ngừa nếp nhăn, tàn nhang, nám.<span class="yellow-text">Rong nho biển</span> giúp hình thành màng bảo vệ, cải thiện độ đàn hồi, làm giảm các triệu chứng khô da, bài tiết chất nhờn, kháng khuẩn, ức chế sừng, sản xuất Collagen và chất chống oxy hóa.<span class="yellow-text">Thảo mộc quý</span> sinh trưởng tự nhiên trên dãy núi Alpes Thụy Sỹ như: cỏ xạ hương, cây tuyết nhung...giúp làn da chị em luôn mềm mịn, dẻo dai.</p>
+                <p class="yellow-text multilevel">EDALLY EX - CHIẾT XUẤT TỪ 4 DƯỠNG CHẤT THIÊN NHIÊN CAO CẤP VÀ QUÝ HIẾM
+                </p>
+                <p>Mỹ phẩm tái tạo da chuyên sâu Edally EX được chiết xuất từ 4 dưỡng chất thiên nhiên cao cấp và quý
+                    hiếm:<span class="yellow-text">Vàng</span> có tác dụng kích thích lưu thông máu, kích hoạt tế bào
+                    da, thúc đẩy mạnh mẽ quá trình tái tạo tế bào da mới. <span class="yellow-text">Tổ yến</span> chính
+                    là bí quyết chăm sóc da được truyền lại của Từ Hy Thái Hậu, giúp hình thành Collagen và Elastin, là
+                    2 chất giúp tạo nên cấu trúc nền da, kết hợp Glycine giúp ngăn ngừa nếp nhăn, tàn nhang, nám.<span
+                        class="yellow-text">Rong nho biển</span> giúp hình thành màng bảo vệ, cải thiện độ đàn hồi, làm
+                    giảm các triệu chứng khô da, bài tiết chất nhờn, kháng khuẩn, ức chế sừng, sản xuất Collagen và chất
+                    chống oxy hóa.<span class="yellow-text">Thảo mộc quý</span> sinh trưởng tự nhiên trên dãy núi Alpes
+                    Thụy Sỹ như: cỏ xạ hương, cây tuyết nhung...giúp làn da chị em luôn mềm mịn, dẻo dai.</p>
                 <div class="edally-img-item">
-                    <img src="./assets/images/static/4-duong-chat.png" alt="" class="img-responsive"/>
+                    <img src="./assets/images/static/4-duong-chat.png" alt="" class="img-responsive" />
                 </div>
                 <p class="yellow-text multilevel">KẾT HỢP CÙNG CÔNG NGHỆ THẨM THẤU TẾ BÀO ĐỘT PHÁ - NEOCELL SCIENCE</p>
-                <p>Neocell Science - công nghệ tái sinh da đột phá nhờ cơ chế thẩm thấu tế bào giúp đem các dưỡng chất giống như dịch tế bào vào sâu bên trong, sản sinh và nuôi dưỡng tế bào non mới, thúc đẩy sự hình thành và phát triển các bó sợi Collagen và Elastin tự nhiên, xóa mờ nếp nhăn, nám, làm đều màu da, thu nhỏ lỗ chân lông, hình thành màng dưỡng ẩm bảo vệ, cho làn da căng mịn và tươi sáng.</p>
+                <p>Neocell Science - công nghệ tái sinh da đột phá nhờ cơ chế thẩm thấu tế bào giúp đem các dưỡng chất
+                    giống như dịch tế bào vào sâu bên trong, sản sinh và nuôi dưỡng tế bào non mới, thúc đẩy sự hình
+                    thành và phát triển các bó sợi Collagen và Elastin tự nhiên, xóa mờ nếp nhăn, nám, làm đều màu da,
+                    thu nhỏ lỗ chân lông, hình thành màng dưỡng ẩm bảo vệ, cho làn da căng mịn và tươi sáng.</p>
                 <div class="edally-img-item">
-                    <img src="./assets/images/static/cong-nghe-neocell.png" alt="" class="img-responsive"/>
+                    <img src="./assets/images/static/cong-nghe-neocell.png" alt="" class="img-responsive" />
                 </div>
                 <p class="yellow-text multilevel">EDALLY EX VINH DỰ NHẬN CÁC CHỨNG NHẬN UY TÍN</p>
-                <p>Edally EX hiện đang làm mưa làm gió tại thị trường Hàn Quốc, Nhật Bản, Trung Hoa và Việt Nam, Edally <br/>
-                EX có khả năng chinh phục ngay cả những khách hàng khó tính nhất, vinh dự nhận nhiều chứng nhận lớn và uy tín tại Hàn Quốc và Việt Nam.</p>
+                <p>Edally EX hiện đang làm mưa làm gió tại thị trường Hàn Quốc, Nhật Bản, Trung Hoa và Việt Nam, Edally
+                    <br />
+                    EX có khả năng chinh phục ngay cả những khách hàng khó tính nhất, vinh dự nhận nhiều chứng nhận lớn
+                    và uy tín tại Hàn Quốc và Việt Nam.</p>
                 <div class="edally-img-team">
-                    <img src="./assets/images/static/team1.png" alt="" class="img-responsive"/>
-                    <img src="./assets/images/static/team2.png" alt="" class="img-responsive"/>
-                    <img src="./assets/images/static/team3.png" alt="" class="img-responsive"/>
+                    <img src="./assets/images/static/team1.png" alt="" class="img-responsive" />
+                    <img src="./assets/images/static/team2.png" alt="" class="img-responsive" />
+                    <img src="./assets/images/static/team3.png" alt="" class="img-responsive" />
                 </div>
                 <p class="yellow-text multilevel">EDALLY EX - GỒM 3 DÒNG SẢN PHẨM CHÍNH</p>
-                <p><a class="edally-content-link" href="https://edally.vn/dong-tai-sinh-phuc-hoi"><strong class="yellow-text multilevel">DÒNG TÁI SINH, PHỤC HỒI</strong></a></p>
-                <p>Edally EX Rejuvenating, bộ sưu tập những dưỡng chất tái sinh, phục hồi da nhiệm màu, phá vỡ giới hạn chăm sóc da, không chỉ nuôi dưỡng và bảo vệ da ở bề mặt. Edally EX Rejuvenating với những tính năng tái sinh, phục hồi da tối ưu có khả năng thẩm thấu mạnh mẽ, đưa các dưỡng chất vào tận sâu bên trong lớp thân bì, thúc đẩy nhanh quá trình tái tạo các tế bào da mới, sản sinh nhiều sợi Collagen và Elastin tự nhiên, chúng tạo thành các bó sợi nâng đỡ cấu trúc của da giúp da trở nên săn chắc, khỏe mạnh, căng mịn, giống như một ngôi nhà với cột trụ kiên cố, tuổi thanh xuân như trở về với làn da qua từng ngày.</p>
+                <p><a class="edally-content-link" href="https://edally.vn/dong-tai-sinh-phuc-hoi"><strong
+                            class="yellow-text multilevel">DÒNG TÁI SINH, PHỤC HỒI</strong></a></p>
+                <p>Edally EX Rejuvenating, bộ sưu tập những dưỡng chất tái sinh, phục hồi da nhiệm màu, phá vỡ giới hạn
+                    chăm sóc da, không chỉ nuôi dưỡng và bảo vệ da ở bề mặt. Edally EX Rejuvenating với những tính năng
+                    tái sinh, phục hồi da tối ưu có khả năng thẩm thấu mạnh mẽ, đưa các dưỡng chất vào tận sâu bên trong
+                    lớp thân bì, thúc đẩy nhanh quá trình tái tạo các tế bào da mới, sản sinh nhiều sợi Collagen và
+                    Elastin tự nhiên, chúng tạo thành các bó sợi nâng đỡ cấu trúc của da giúp da trở nên săn chắc, khỏe
+                    mạnh, căng mịn, giống như một ngôi nhà với cột trụ kiên cố, tuổi thanh xuân như trở về với làn da
+                    qua từng ngày.</p>
                 <div class="edally-img-item-large">
-                    <img src="./assets/images/static/cataloge-edally-final-6-12-06.jpg" alt="" class="img-responsive"/>
+                    <img src="./assets/images/static/cataloge-edally-final-6-12-06.jpg" alt="" class="img-responsive" />
                 </div>
-                <p><a class="edally-content-link" href=""> <strong class="yellow-text multilevel">DÒNG BÍ MẬT HOÀNG CUNG</strong></a></p>
-                <p>Từ ngàn xưa Hoàng Cung đã lưu giữ những bí mật chăm sóc da kinh điển bảo vệ cho nhan sắc bậc Vương Hậu, cung tần mỹ nữ, những nhan sắc huyền thoại, những vẻ đẹp không tuổi làm say đắm từ bậc đế tôn đến người dân thường.</p>
-                <p>Chính vì vậy các phương thức dưỡng nhan bí truyền đã trở thành nguồn cảm hứng và đề tài nghiên cứu cho các nhà khoa học hiện đại trong hành trình đi tìm vẻ đẹp bền vững. Từ đây công dụng ưu tú của Vàng, Tổ yến, Rong nho biển đã được phát hiện.</p>
-                <p>Càng hiểu rõ con người ta càng trân quý những tinh túy của tạo hóa đã ban tặng, đội ngũ những nhà khoa học hùng hậu đến từ hai tên tuổi mỹ phẩm danh tiếng nhất Hàn Quốc Cosmax, Coréana đã nghiên cứu và cho ra đời dòng Mỹ phẩm Tái Tạo Da Chuyên Nghiệp Edally EX  Luxury.</p>
-                <p>Edally EX Luxury – Bí Mật Hoàng Cung là dòng mỹ phẩm chuyên nghiệp được chiết xuất từ các thành phần thiên nhiên quý hiếm như: tinh chất vàng, tổ yến, rong nho biển và thảo mộc sinh trưởng tự nhiên trên dãy núi Alpes... Edally EX Luxury đã thành công trong việc kết hợp những bí quyết dưỡng nhan trong hoàng cung với công nghệ thẩm thấu tế bào đột phá Neocell Science giúp tối ưu khóa khả năng thẩm thấu các dưỡng chất, tăng cường năng lượng mang lại cho phụ nữ thời nay nhan sắc trẻ trung không tuổi với cách chăm sóc da đơn giản và không đắt đỏ.</p>
-                <p>Neocell Science – công nghệ tái sinh da đột phá nhờ cơ chế thẩm thấu tế bào giúp đem các dưỡng chất giống như dịch tế bào, sản sinh và nuôi dưỡng tế bào non mới, thúc đẩy sự hình thành và phát triển các bó sợi Collagen và Elastin tự nhiên, xóa mờ nếp nhăn, nám, làm đều màu da, thu nhỏ lỗ chân lông, hình thành màng dưỡng ẩm bảo vệ cho làn da căng mịn và tươi sáng.</p>
-                <p>Edally EX Luxury như một huyền thoại diệu kỳ, ẩn dấu <span class="yellow-text">“BÍ QUYẾT CẢI LÃO HOÀN ĐỒNG”</span> trong hoàng cung, là một tuyệt phẩm giúp tái hiện vẻ đẹp quý tộc, duyên dáng, tinh tế và căng tràn sức sống.</p>
+                <p><a class="edally-content-link" href=""> <strong class="yellow-text multilevel">DÒNG BÍ MẬT HOÀNG
+                            CUNG</strong></a></p>
+                <p>Từ ngàn xưa Hoàng Cung đã lưu giữ những bí mật chăm sóc da kinh điển bảo vệ cho nhan sắc bậc Vương
+                    Hậu, cung tần mỹ nữ, những nhan sắc huyền thoại, những vẻ đẹp không tuổi làm say đắm từ bậc đế tôn
+                    đến người dân thường.</p>
+                <p>Chính vì vậy các phương thức dưỡng nhan bí truyền đã trở thành nguồn cảm hứng và đề tài nghiên cứu
+                    cho các nhà khoa học hiện đại trong hành trình đi tìm vẻ đẹp bền vững. Từ đây công dụng ưu tú của
+                    Vàng, Tổ yến, Rong nho biển đã được phát hiện.</p>
+                <p>Càng hiểu rõ con người ta càng trân quý những tinh túy của tạo hóa đã ban tặng, đội ngũ những nhà
+                    khoa học hùng hậu đến từ hai tên tuổi mỹ phẩm danh tiếng nhất Hàn Quốc Cosmax, Coréana đã nghiên cứu
+                    và cho ra đời dòng Mỹ phẩm Tái Tạo Da Chuyên Nghiệp Edally EX Luxury.</p>
+                <p>Edally EX Luxury – Bí Mật Hoàng Cung là dòng mỹ phẩm chuyên nghiệp được chiết xuất từ các thành phần
+                    thiên nhiên quý hiếm như: tinh chất vàng, tổ yến, rong nho biển và thảo mộc sinh trưởng tự nhiên
+                    trên dãy núi Alpes... Edally EX Luxury đã thành công trong việc kết hợp những bí quyết dưỡng nhan
+                    trong hoàng cung với công nghệ thẩm thấu tế bào đột phá Neocell Science giúp tối ưu khóa khả năng
+                    thẩm thấu các dưỡng chất, tăng cường năng lượng mang lại cho phụ nữ thời nay nhan sắc trẻ trung
+                    không tuổi với cách chăm sóc da đơn giản và không đắt đỏ.</p>
+                <p>Neocell Science – công nghệ tái sinh da đột phá nhờ cơ chế thẩm thấu tế bào giúp đem các dưỡng chất
+                    giống như dịch tế bào, sản sinh và nuôi dưỡng tế bào non mới, thúc đẩy sự hình thành và phát triển
+                    các bó sợi Collagen và Elastin tự nhiên, xóa mờ nếp nhăn, nám, làm đều màu da, thu nhỏ lỗ chân lông,
+                    hình thành màng dưỡng ẩm bảo vệ cho làn da căng mịn và tươi sáng.</p>
+                <p>Edally EX Luxury như một huyền thoại diệu kỳ, ẩn dấu <span class="yellow-text">“BÍ QUYẾT CẢI LÃO HOÀN
+                        ĐỒNG”</span> trong hoàng cung, là một tuyệt phẩm giúp tái hiện vẻ đẹp quý tộc, duyên dáng, tinh
+                    tế và căng tràn sức sống.</p>
                 <div class="edally-img-item-large">
-                    <img src="./assets/images/static/dong-bi-mat.jpg" alt="" class="img-responsive"/>
+                    <img src="./assets/images/static/dong-bi-mat.jpg" alt="" class="img-responsive" />
                 </div>
-                <p><a class="edally-content-link" href=""><strong class="yellow-text multilevel">DÒNG TRANG ĐIỂM</strong></a></p>
+                <p><a class="edally-content-link" href=""><strong class="yellow-text multilevel">DÒNG TRANG
+                            ĐIỂM</strong></a></p>
                 <div class="edally-img-item-large">
-                    <img src="./assets/images/static/trang-diem.jpg" alt="" class="img-responsive"/>
+                    <img src="./assets/images/static/trang-diem.jpg" alt="" class="img-responsive" />
                 </div>
-               <strong><i>EDALLY EX - TÁI TẠO LÀN DA - KIÊU SA CÙNG NĂM THÁNG</i></strong>
+                <strong><i>EDALLY EX - TÁI TẠO LÀN DA - KIÊU SA CÙNG NĂM THÁNG</i></strong>
             </div>
             <!-- content-wrapper -->
         </div>
     </main>
     <footer>
+        <div class="prefooter-list">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12 col-sm-3 col-md-3 prefooter-item">
+                        <p class="white-text profooter-white-text">HOTLINE 24/7</p>
+                        <p class="profooter-info-text">1900 636325</p>
+                        <span class="white-text prefooter-item-spacing"></span>
+                    </div>
+                    <div class="col-xs-12 col-sm-3 col-md-3 prefooter-item">
+                        <p class="white-text profooter-white-text">Hỗ trợ đại lý:</p>
+                        <p class="profooter-info-text">0919 636325</p>
+                        <span class="white-text prefooter-item-spacing"></span>
+                    </div>
+
+                    <div class="col-xs-12 col-sm-3 col-md-3 prefooter-item">
+                        <p class="white-text profooter-white-text">Showroom:</p>
+                        <p class="profooter-info-text">27 Xuân Hồng, P.12, Q. Tân Bình</p>
+                        <span class="white-text prefooter-item-spacing"></span>
+                    </div>
+                    <div class="col-xs-12 col-sm-3 col-md-3 prefooter-item">
+                        <p class="profooter-blue-text">NHẬN VOUCHER TRỊ GIÁ 50K</p>
+                        <p class="white-text">Nhập số điện thoại của bạn và nhận ngay mã voucher trị giá 50.000đ, áp
+                            dụng cho khách hàng mới</p>
+                        <form class="form-inline">
+                            <div class="input-group">
+                                <input class="form-control" placeholder="Nhập số điện thoại" type="number">
+                                <span class="input-group-addon">
+                                    <i class="fa fa-location-arrow"></i>
+                                </span>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
         <div class="footer-wrapper">
             <div class="container">
                 <div class="footer-list">
                     <div class="row">
-                        <div class="col-xs-12 col-sm-12 col-md-3 footer-item">
-                            <img src="./assets//images/footer/logo1.png" class="img-responsive" alt="footer-logo" />
-                            <p>Thương hiệu mỹ phẩm cao cấp nhập khẩu Hàn Quốc được triệu phụ nữ Việt tin dùng</p>
+                        <div class="col-xs-12 col-sm-4 col-md-4 footer-item">
+                            <div class="info-company">
+                                <img src="./assets//images/footer/logo1.png" class="img-responsive" alt="footer-logo" />
+                                <p>Thương hiệu mỹ phẩm cao cấp nhập khẩu Hàn Quốc được triệu phụ nữ Việt tin dùng</p>
+                                <ul>
+                                    <li>
+                                        <p><i class="fa fa-arrow-circle-up" aria-hidden="true"></i><span
+                                                class="yellow-text"> Giấy phép kinh doanh: </span>0106062221</p>
+                                    </li>
+                                    <li>
+                                        <p><i class="fas fa-phone-volume"></i><span class="yellow-text"> Hotline:
+                                            </span>09.6969.0625 <span class="yellow-text">(Tư vấn mua hàng)</span> -
+                                            09.6969.0625<span class="yellow-text"> (Hỗ trợ đại lý)</span></p>
+                                    </li>
+                                    <li>
+                                        <p><i class="far fa-envelope"></i><span class="yellow-text"> Email:
+                                            </span>Edallyex@gmail.com</p>
+                                    </li>
+                                    <li>
+                                        <p><i class="fas fa-map-marker-alt"></i><span class="yellow-text"> Địa chỉ:
+                                            </span>Tòa nhà Viwaseen, số 48 Tố Hữu, Trung Văn, Hà Nội (Có chỗ đậu xe hơi
+                                            cho khác đến tham quan và mua sắm)</p>
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
-                        <div class="col-xs-12 col-sm-4 col-md-3 footer-item">
-                            <h4 class="footer-title">Edally ex</h4>
-                            <ul class="">
-                                <li><a href="">Trang chủ</a></li>
-                                <li><a href="">Thương hiệu</a></li>
-                                <li><a href="">Sản phẩm</a></li>
-                                <li><a href="">Chuyên gia tư vấn</a></li>
-                                <li><a href="">Đại lý</a></li>
-                                <li><a href="">Blog làm đẹp</a></li>
-                                <li><a href="">Tin tức</a></li>
-                                <li><a href="">Liên hệ</a></li>
+                        <div class="col-xs-12 col-sm-4 col-md-4 footer-item">
+                            <h4 class="footer-title">Chính sách và quy định</h4>
+                            <ul>
+                                <li><a href="">Chính sách bảo mật</a></li>
+                                <li><a href="">Chính sách đại lý </a></li>
+                                <li><a href="">Hướng dẫn mua hàng</a></li>
+                                <li><a href="">Chính sách vận chuyển</a></li>
+                                <li><a href="">Quy định thanh toán</a></li>
                             </ul>
+                            <br />
+                            <form class="form-inline">
+                                <input type="text" placeholder="Nhập email của bạn" />
+                                <button class="btn-positive btn-yellow btn-send">Gửi</button>
+                            </form>
+                            <br />
                             <img src="./assets/images/footer/bct-note.png" alt="btc" class="img-responsive">
                         </div>
-                        <div class="col-xs-12 col-sm-4 col-md-3 footer-item">
+                        <div class="col-xs-12 col-sm-4 col-md-4 footer-item">
                             <h4 class="footer-title">Fanpage Edally EX</h4>
                             <div class="fb-page" data-href="https://www.facebook.com/Edally.vn/" data-tabs=""
-                                data-width="290" data-height="300" data-small-header="false"
+                                data-width="220" data-height="300" data-small-header="false"
                                 data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true">
                                 <blockquote cite="https://www.facebook.com/Edally.vn/" class="fb-xfbml-parse-ignore"><a
                                         href="https://www.facebook.com/Edally.vn/">Edally - Mỹ Phẩm Tái Tạo Da Chuyên
                                         Sâu</a></blockquote>
                             </div>
-                        </div>
-                        <div class="col-xs-12 col-sm-4 col-md-3 footer-item">
-                            <h4 class="footer-title">Chính sách và quy định</h4>
-                            <ul>
-                                <li><a href="">Hướng dẫn mua hàng</a></li>
-                                <li><a href="">Chính sách đại lý </a></li>
-                                <li><a href="">Chính sách bảo mật</a></li>
-                                <li><a href="">Chính sách vận chuyển</a></li>
-                                <li><a href="">Quy định thanh toán</a></li>
-                            </ul>
-                            <form class="frm-mail form-inline">
-                                <input type="text" placeholder="Nhập email của bạn" />
-                                <button class="btn-positive btn-yellow btn-send">Gửi</button>
-                            </form>
                         </div>
                     </div>
                 </div>
@@ -284,107 +500,7 @@
     <script async defer crossorigin="anonymous"
         src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v4.0"></script>
 
-    <script>
-        function openNav() {
-            document.getElementById("mySidenav").style.width = "300px";
-        }
-
-        function closeNav() {
-            document.getElementById("mySidenav").style.width = "0";
-        }
-        window.onscroll = function () { fixedMenu() };
-
-        var header = document.getElementById("myHeader");
-        var sticky = header.offsetTop;
-
-        function fixedMenu() {
-            if (window.pageYOffset > sticky) {
-                header.classList.add("sticky");
-            } else {
-                header.classList.remove("sticky");
-            }
-        }
-        $(document).ready(function () {
-            $(".fa-angle-down").click(function () {
-                if ($(this).hasClass('active')) {
-                    $(this).removeClass('active');
-                    $(this).parent().find("ul").addClass('hidden');
-                } else {
-                    $(this).addClass('active');
-                    $(this).parent().children("ul").removeClass('hidden');
-                }
-            })
-            $(".banner-owl-carousel").owlCarousel({
-                nav: true,
-                navText: ["<i class='fa fa-angle-left'></i>", "<i class='fa fa-angle-right'></i>"],
-                slideSpeed: 300,
-                paginationSpeed: 400,
-                items: 1,
-                autoplay: true,
-                rewind: true,
-            });
-            $(".custom-owl-carousel-4").owlCarousel({
-                nav: true,
-                navText: ["<i class='fa fa-angle-left'></i>", "<i class='fa fa-angle-right'></i>"],
-                items: 4,
-                autoplay: true,
-                autoplayTimeout: 1000,
-                autoplayHoverPause: true,
-                rewind: true,
-                dots: false,
-                margin: 30,
-                responsiveClass: true,
-                responsive: {
-                    0: {
-                        items: 1
-                    },
-                    767: {
-                        items: 3
-
-                    },
-                    991: {
-                        items: 4,
-
-                    }
-                }
-            });
-            $(".custom-owl-carousel-3").owlCarousel({
-                nav: true,
-                navText: ["<i class='fa fa-angle-left'></i>", "<i class='fa fa-angle-right'></i>"],
-                items: 3,
-                autoplay: true,
-                autoplayTimeout: 1000,
-                autoplayHoverPause: true,
-                rewind: true,
-                dots: false,
-                margin: 35,
-                responsiveClass: true,
-                responsive: {
-                    0: {
-                        items: 1
-                    },
-                    767: {
-                        items: 3
-
-                    }
-                }
-            })
-            $(window).scroll(function () {
-                if ($(this).scrollTop() > 100) {
-                    $('#goTop').fadeIn();
-                } else {
-                    $('#goTop').fadeOut();
-                }
-            });
-            $('#goTop').click(function () {
-                $("html, body").animate({ scrollTop: 0 }, 600);
-                return false;
-            });
-        });
-
-
-
-    </script>
+    <script src="./assets/scripts/main.js"></script>
 </body>
 
 </html>
