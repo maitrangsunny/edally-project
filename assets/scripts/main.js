@@ -14,7 +14,7 @@ $(document).ready(function () {
         $("#mySidenav").addClass('act-mobile-menu');
         $('.close-side-overlay').addClass('overlay-opened');
     });
-    $(".mobile-list .mb-arrow").click(function () {
+    $(".mb-arrow").click(function () {
         if ($(this).hasClass('active')) {
             $(this).removeClass('glyphicon-menu-down active');
             $(this).parent().find("ul").hide(500);

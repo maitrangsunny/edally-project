@@ -101,6 +101,7 @@ button:focus{
 .header-container{
     background-color: #FFF;    
     min-height: 60px;
+    box-shadow: 0 1px 3px rgba(0,0,0,.1);
 }
 
 .sticky {
@@ -222,10 +223,6 @@ button:focus{
     color: #333;
 }
 
-.menu-mobile .shopping-cart{
-    margin-top: 18px;
-}
-
 .menu-mobile .hor-logo{
     width: calc(100% - 52px);
 }
@@ -281,6 +278,11 @@ button:focus{
     width: 45px;
     text-align: center;
     border-left: 1px solid rgba(129,129,129,.2)
+}
+
+.mobile-sidebar ul li>.mb-arrow.active{
+    background-color: #f2b111;
+    color:#FFF;
 }
 
 .mobile-sidebar ul li a {
@@ -367,10 +369,9 @@ button:focus{
     margin-left: 15px;
 }
 
-.sticky.act-scroll .shopping-cart{
-    float: right;
+.shopping-cart{
     margin-top: 18px;
-}
+} 
 
 .acc-user {
     font-size: 18px;
@@ -703,6 +704,8 @@ button:focus{
 
 .prefooter-list .prefooter-item .prefooter-item-spacing{
     letter-spacing: 2px;
+    border-bottom: 1px dashed;
+    width: 100px;
 }
 
 .prefooter-list .form-inline .input-group-addon{
@@ -1224,9 +1227,9 @@ input[type=number]
         margin: auto;
     }
 
-    .footer-wrapper .footer-list .footer-item p{
+    /* .footer-wrapper .footer-list .footer-item p{
         text-align: center;
-    }    
+    }     */
 
     .acc-note {
         text-align: center;
@@ -1241,6 +1244,11 @@ input[type=number]
         padding-left: 0px;
         margin-bottom: 5px;
     }
+
+    .prefooter-list .profooter-info-text{
+        font-size: 18px;
+    }
+
 }
 
 @media only screen and (max-width: 767px){
@@ -1281,5 +1289,9 @@ input[type=number]
 
     .prefooter-list .profooter-blue-text{
         font-size: 24px;
+    }
+    
+    .prefooter-list .prefooter-item .prefooter-item-spacing{
+        margin: 20px auto;
     }
 }
