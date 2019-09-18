@@ -29,14 +29,94 @@
         <![endif]-->
     <header>
         <div class="header-container" id="myHeader">
-            <div class="top-menu">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12">
+                        <div class="menu-mobile visible-sm visible-xs clearfix">
+                            <a href="javascript:void(0)" class="mobile-bar pull-left"><span
+                                    class="fa fa-bars"></span></a>
+                            <div class="logo hor-logo">
+                                <a href="" class="pull-left"><img src="./assets/images/logo/logo3.png" alt=""
+                                        class="img-responsive" /></a>
+                            </div>
+                            <a href="" class="shopping-cart pull-right"><i class="fa fa-shopping-bag"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="sticky" id="fixMenu">
                 <div class="container">
                     <div class="row">
-                        <div class="col-xs-12 col-sm-12 col-md-3">
-                            <a class="logo" href="#"><img alt="logo" src="./assets/images/logo/logo4.png"
-                                    class="img-responsive" /></a>
+                        <div class="col-xs-12">
+                            <div class="clearfix">
+                                <a href="javascript:void(0)" class="mobile-bar pull-left visible-xs visible-sm"><span
+                                        class="fa fa-bars"></span></a>
+                                <div class="logo hor-logo">
+                                    <a href=""><img src="./assets/images/logo/logo3.png" alt=""
+                                            class="img-responsive" /></a>
+                                </div>
+                                <ul class="navbar-nav hidden-xs hidden-sm">
+                                    <li class="nav-item active">
+                                        <a class="nav-link" href="#">Trang chủ</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">Thương hiệu</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">Sản phẩm<span
+                                                class="glyphicon glyphicon-menu-down"></span></a>
+                                        <ul class="submenu">
+                                            <li><a class="" href="#">Dòng tái sinh, phục hồi</a></li>
+                                            <li><a href="#">Dòng bí mật hoàng cung</a></li>
+                                            <li><a href="#">Dòng trang điểm</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">Chuyên gia tư vấn<span
+                                                class="glyphicon glyphicon-menu-down"></span></a>
+                                        <ul class="submenu">
+                                            <li><a class="" href="#">Chuyên gia tư vấn</a></li>
+                                            <li><a href="#">Chuyên gia tư vấn</a></li>
+                                            <li><a href="#">Chuyên gia tư vấn</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">Đại lý<span
+                                                class="glyphicon glyphicon-menu-down"></span></a>
+                                        <ul class="submenu">
+                                            <li><a class="" href="#">Đại lý</a></li>
+                                            <li><a href="#">Đại lý</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">Blog làm đẹp</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">Tin tức</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">Liên hệ</a>
+                                    </li>
+                                </ul>
+                                <a href="" class="acc-user hidden-sm hidden-xs"><i class="fas fa-user-circle"></i> Đăng
+                                    nhập
+                                </a>
+
+                                <a href="shopping-cart" class="shopping-cart pull-right"><i
+                                        class="fa fa-shopping-bag"></i>
+                                </a>
+
+                            </div>
                         </div>
-                        <div class="col-xs-12 col-sm-12 col-md-5">
+                    </div>
+                </div>
+            </div>
+            <div class="top-menu hidden-sm hidden-xs">
+                <div class="container">
+                    <div class="row">
+
+                        <div class="col-xs-12 col-sm-12 col-md-4">
                             <div class="search-box">
                                 <!-- Search form -->
                                 <form role="search" method="get" class="searchform">
@@ -48,6 +128,20 @@
                                 </form>
                             </div>
                         </div>
+                        <div class="col-xs-12 col-sm-12 col-md-4">
+                            <a class="logo" href="#"><img alt="logo" src="./assets/images/logo/logo4.png"
+                                    class="img-responsive" /></a>
+                        </div>
+                        <div class="col-xs-12 col-sm-12 col-md-4">
+                            <div class="menu-contact-info">
+                                <span class="phone"><i class="fas fa-phone-volume" aria-hidden="true"></i>&nbsp;1900 63
+                                    63 25</span>
+                                <a href="" class="acc-user"><i class="fas fa-user-circle"></i> Đăng nhập
+                                </a>
+                                <a href="" class="shopping-cart"><i class="fa fa-shopping-bag"></i></a>
+                            </div>
+
+                        </div>
                         <span class="mobile-bar visible-sm visible-xs" onclick="openNav()">&#9776;</span>
                     </div>
                 </div>
@@ -56,7 +150,7 @@
                 <div class="container">
                     <div class="row">
                         <div class="col-xs-12">
-                            <div class="" id="navbarNav">
+                            <div class="">
                                 <ul class="navbar-nav">
                                     <li class="nav-item active">
                                         <a class="nav-link" href="#">Trang chủ</a>
@@ -65,7 +159,8 @@
                                         <a class="nav-link" href="#">Thương hiệu</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link" href="#">Sản phẩm</a>
+                                        <a class="nav-link" href="#">Sản phẩm<span
+                                                class="glyphicon glyphicon-menu-down"></span></a>
                                         <ul class="submenu">
                                             <li><a class="" href="#">Dòng tái sinh, phục hồi</a></li>
                                             <li><a href="#">Dòng bí mật hoàng cung</a></li>
@@ -73,7 +168,8 @@
                                         </ul>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link" href="#">Chuyên gia tư vấn</a>
+                                        <a class="nav-link" href="#">Chuyên gia tư vấn<span
+                                                class="glyphicon glyphicon-menu-down"></span></a>
                                         <ul class="submenu">
                                             <li><a class="" href="#">Chuyên gia tư vấn</a></li>
                                             <li><a href="#">Chuyên gia tư vấn</a></li>
@@ -81,7 +177,8 @@
                                         </ul>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link" href="#">Đại lý</a>
+                                        <a class="nav-link" href="#">Đại lý<span
+                                                class="glyphicon glyphicon-menu-down"></span></a>
                                         <ul class="submenu">
                                             <li><a class="" href="#">Đại lý</a></li>
                                             <li><a href="#">Đại lý</a></li>
@@ -104,55 +201,79 @@
             </div>
         </div>
         <!-- menu on mobiles & tablets -->
-        <div class="mobile-menu visible-sm visible-xs" id="mySidenav">
-            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><i class="fa fa-times"></i></a>
-            <ul class="mobile-list mobile-list-level1">
-                <li><a href="/">Trang chủ</a></li>
-                <li><a href="">Thương hiệu</a></li>
-                <li><a href="">Sản phẩm</a>
-                    <i class="fa fa-angle-down" aria-hidden="true"></i>
-                    <ul class="mobile-list-level2 hidden">
-                        <li><a href="">Dòng tái sinh, phục hồi</a></li>
-                        <li><a href="">Dòng bí mật hoàng cung</a></li>
-                        <li><a href="">dòng trang điểm</a></li>
-                    </ul>
-                </li>
-                <li>
-                    <a href="">Chuyên gia tư vấn</a>
-                    <i class="fa fa-angle-down" aria-hidden="true"></i>
-                    <ul class="mobile-list-level2 hidden">
-                        <li>
-                            <a href="">Chuyên gia tư vấn</a>
-                            <i class="fa fa-angle-down" aria-hidden="true"></i>
-                            <ul class="mobile-list-level3 hidden">
-                                <li><a href="">Chuyên gia tư vấn</a></li>
-                                <li><a href="">Đẹp chuẩn chuyên gia</a></li>
+        <div class="mobile-sidebar visible-sm visible-xs" id="mySidenav">
+            <div class="col-xs-12">
+                <div class="mb-login">
+                    <a href=""><i class="fas fa-user-circle"></i>
+                        Đăng nhập
 
-                            </ul>
-                        </li>
-                        <li><a href="">Đẹp chuẩn chuyên gia</a></li>
-                    </ul>
-                </li>
-                <li>
-                    <a href="">Đại lý</a>
-                    <i class="fa fa-angle-down" aria-hidden="true"></i>
-                    <ul class="mobile-list-level2 hidden">
-                        <li><a href="">Chính sách đại lý</a></li>
-                        <li><a href="">Hệ thống phân phối toàn quốc</a></li>
-                        <li><a href="">Câu chuyện đại lý</a></li>
-                        <li><a href="">Đào tạo đại lý</a></li>
-                    </ul>
-                </li>
-                <li>
-                    <a href="">Blog làm đẹp</a>
-                    <i class="fa fa-angle-down" aria-hidden="true"></i>
-                </li>
-                <li><a href="">Tin tức</a>
-                    <i class="fa fa-angle-down" aria-hidden="true"></i>
-                </li>
-                <li><a href="">Liên hệ</a></li>
-            </ul>
+                    </a>
+                </div>
+            </div>
+            <div class="col-xs-12">
+                <div class="search-box">
+                    <!-- Search form -->
+                    <form role="search" method="get" class="searchform">
+                        <input type="text" placeholder="Tìm sản phẩm" value="">
+                        <input type="hidden" name="post_type" value="product">
+                        <button type="submit" class="searchsubmit">
+                            <i class="fa fa-search" aria-hidden="true"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+            <div class="col-xs-12">
+                <ul class="mobile-list mobile-list-level1">
+                    <li><a href="/">Trang chủ</a></li>
+                    <li><a href="">Thương hiệu</a></li>
+                    <li><a href="">Sản phẩm </a>
+                        <span class="glyphicon glyphicon-menu-right mb-arrow"></span>
+                        <ul class="mobile-list-level2">
+                            <li><a href="">Dòng tái sinh, phục hồi</a></li>
+                            <li><a href="">Dòng bí mật hoàng cung</a></li>
+                            <li><a href="">dòng trang điểm</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="">Chuyên gia tư vấn</a>
+                        <span class="glyphicon glyphicon-menu-right mb-arrow"></span>
+
+                        <ul class="mobile-list-level2">
+                            <li>
+                                <a href="">Chuyên gia tư vấn</a>
+                                <span class="glyphicon glyphicon-menu-right mb-arrow"></span>
+
+                                <ul class="mobile-list-level3">
+                                    <li><a href="">Chuyên gia tư vấn</a></li>
+                                    <li><a href="">Đẹp chuẩn chuyên gia</a></li>
+
+                                </ul>
+                            </li>
+                            <li><a href="">Đẹp chuẩn chuyên gia</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="">Đại lý </a>
+                        <span class="glyphicon glyphicon-menu-right mb-arrow"></span>
+                        <ul class="mobile-list-level2">
+                            <li><a href="">Chính sách đại lý</a></li>
+                            <li><a href="">Hệ thống phân phối toàn quốc</a></li>
+                            <li><a href="">Câu chuyện đại lý</a></li>
+                            <li><a href="">Đào tạo đại lý</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="">Blog làm đẹp</a>
+
+                    </li>
+                    <li><a href="">Tin tức</a>
+
+                    </li>
+                    <li><a href="">Liên hệ</a></li>
+                </ul>
+            </div>
         </div>
+        <div class="close-side-overlay"></div>
     </header>
     <main>
         <div class="product-list-page mg-30">
@@ -403,54 +524,8 @@
     <script src="./assets/scripts/owl.carousel.min.js"></script>
     <script async defer crossorigin="anonymous"
         src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v4.0"></script>
+    <script src="./assets/scripts/main.js"></script>
 
-    <script>
-        function openNav() {
-            document.getElementById("mySidenav").style.width = "300px";
-        }
-
-        function closeNav() {
-            document.getElementById("mySidenav").style.width = "0";
-        }
-        window.onscroll = function () { fixedMenu() };
-
-        var header = document.getElementById("myHeader");
-        var sticky = header.offsetTop;
-
-        function fixedMenu() {
-            if (window.pageYOffset > sticky) {
-                header.classList.add("sticky");
-            } else {
-                header.classList.remove("sticky");
-            }
-        }
-        $(document).ready(function () {
-            $(".fa-angle-down").click(function () {
-                if ($(this).hasClass('active')) {
-                    $(this).removeClass('active');
-                    $(this).parent().find("ul").addClass('hidden');
-                } else {
-                    $(this).addClass('active');
-                    $(this).parent().children("ul").removeClass('hidden');
-                }
-            });
-
-            $(window).scroll(function () {
-                if ($(this).scrollTop() > 100) {
-                    $('#goTop').fadeIn();
-                } else {
-                    $('#goTop').fadeOut();
-                }
-            });
-            $('#goTop').click(function () {
-                $("html, body").animate({ scrollTop: 0 }, 600);
-                return false;
-            });
-        });
-
-
-
-    </script>
 </body>
 
 </html>

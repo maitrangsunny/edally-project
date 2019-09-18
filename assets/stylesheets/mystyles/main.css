@@ -221,6 +221,8 @@ button:focus{
     margin-top: 15px;
     font-size: 25px;
     color: #333;
+    width: 30px;
+    height: 30px;
 }
 
 .menu-mobile .hor-logo{
@@ -277,7 +279,7 @@ button:focus{
     color: #f2b111;
     width: 45px;
     text-align: center;
-    border-left: 1px solid rgba(129,129,129,.2)
+    border-left: 1px solid rgba(129,129,129,.2);
 }
 
 .mobile-sidebar ul li>.mb-arrow.active{
@@ -462,14 +464,17 @@ button:focus{
 
 :-webkit-input-placeholder { /* Edge */
     color:#CCC;
-  }
+    font-size: 12px;
+}
   
 :-ms-input-placeholder { /* Internet Explorer */
     color: #CCC;
+    font-size: 12px;
 }
 
 ::placeholder {
     color: #CCC;
+    font-size: 12px;
 }
 
 .custom-owl-carousel {

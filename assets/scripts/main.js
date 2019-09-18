@@ -96,4 +96,46 @@ $(document).ready(function () {
         $("html, body").animate({ scrollTop: 0 }, 600);
         return false;
     });
+    if( $(".date").length>0){
+        $(".date").datepicker({
+            autoclose: true,
+            todayHighlight: true
+        }).datepicker('update', new Date());
+    }
+    if( $('.select2').length>0){
+        $('.select2').select2();
+    }
+    // Quantity
+    $('<div class="quantity-nav"><div class="quantity-button quantity-up"><i class="fa fa-plus"></i></div><div class="quantity-button quantity-down"><i class="fa fa-minus"></i></div></div>').insertAfter('.quantity input');
+    $('.quantity').each(function () {
+        var spinner = $(this),
+            input = spinner.find('input[type="number"]'),
+            btnUp = spinner.find('.quantity-up'),
+            btnDown = spinner.find('.quantity-down'),
+            min = input.attr('min'),
+            max = input.attr('max');
+
+        btnUp.click(function () {
+            var oldValue = parseFloat(input.val());
+            if (oldValue >= max) {
+                var newVal = oldValue;
+            } else {
+                var newVal = oldValue + 1;
+            }
+            spinner.find("input").val(newVal);
+            spinner.find("input").trigger("change");
+        });
+
+        btnDown.click(function () {
+            var oldValue = parseFloat(input.val());
+            if (oldValue <= min) {
+                var newVal = oldValue;
+            } else {
+                var newVal = oldValue - 1;
+            }
+            spinner.find("input").val(newVal);
+            spinner.find("input").trigger("change");
+        });
+
+    });
 });
