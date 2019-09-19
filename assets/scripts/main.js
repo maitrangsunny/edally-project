@@ -16,7 +16,9 @@ $(document).ready(function () {
     });
     $(".mb-arrow").click(function () {
         if ($(this).hasClass('active')) {
-            $(this).removeClass('glyphicon-menu-down active');
+          
+            $(this).parent().find('.mb-arrow').removeClass('glyphicon-menu-down active');
+          
             $(this).parent().find("ul").hide(500);
         } else {
             $(this).addClass('glyphicon-menu-down active');
