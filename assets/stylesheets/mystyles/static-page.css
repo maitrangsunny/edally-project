@@ -72,6 +72,22 @@
     padding-right: 8px;
 }
 
+/*order product success*/
+.edally-order-success h3{
+    font-weight: 700;
+    font-style: italic;
+    text-transform: uppercase;
+}
+
+.edally-order-success{
+    text-align: center;
+}
+
+.edally-order-success .pastel-yellow{
+    background-color: #F3E9DE;
+    padding: 10px;
+}
+
 @media only screen and (max-width: 767px)
 {
     .edally-img-item img,.edally-img-team img{
