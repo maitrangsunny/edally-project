@@ -1,0 +1,52 @@
+.shop-cart-table{
+    table-layout: fixed ;
+    width: 100% ;
+    border-collapse:separate; 
+    border-spacing: 0 1em;
+}
+
+.shop-cart-table >tbody>tr>td:nth-child(2),
+.shop-cart-table >tbody>tr>td:nth-child(4){
+    background-color: #F9F7F8;
+}
+
+.shop-cart-table >tbody>tr>td:nth-child(1),
+.shop-cart-table >tbody>tr>td:nth-child(3)
+{
+    background-color: #ECC777;
+    color: #fff;
+}
+
+.shop-cart-table,.billing-info-table,
+.shop-cart-table >tbody>tr>td,
+.billing-info-table >tbody>tr>td{
+    border: none !important;
+}
+
+.billing-info-table >tbody>tr>td{
+    padding: 5px 0 !important;
+}
+
+.billing-info-table >tbody>tr>td:nth-child(n+2){
+    text-align: right;
+}
+
+.total-price-text{
+    text-align: right;
+    border-top: 1px solid #ddd;
+    padding-top: 10px;
+}
+
+@media only screen and (max-width: 575px){
+    .shop-cart-table >tbody>tr>td{
+        width: 80%;
+        display: block;
+        padding: 5px !important;
+        text-align: center;
+        margin: 0 auto;
+    }
+    
+    .shop-cart-table {
+        border-spacing: 0;
+    }
+}
