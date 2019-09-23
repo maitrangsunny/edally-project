@@ -46,16 +46,18 @@
     border-top: 1px solid #ddd;
     padding-top: 10px;
 }
-
+.shop-cart-item .link-direct{
+    display: flex;
+    overflow: hidden;
+    margin: 1em 0;
+    align-items: center;
+}
+.shop-cart-item .link-direct>div:first-child{
+    margin-right: auto;
+}
 @media only screen and (max-width: 767px){
-    .shop-cart-item .link-direct a:last-child{
-        float: none !important;
-    }
-    .shop-cart-item .link-direct a:first-child
-    {
-        width: 100%;
-    }
     .shop-cart-item .link-direct{
+        display: inline;
         text-align: center;
     }
 }
