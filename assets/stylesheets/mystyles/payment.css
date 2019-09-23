@@ -1,33 +1,43 @@
+.payment-page{
+    margin-bottom: 50px;
+}
 .h2-payment-title {
-    color: #337ab7;
+    color: #5A96C8;
 }
 .checkout-order-review {
     padding: 15px;
     background-color: #F8F8F8;
 }
 .payment-box {
+    margin-bottom: 20px;
     border: 1px solid #d9d9d9;
     border-radius: 5px;
 }
 .payment-box .payment-method{
     padding: 15px;
 }
-.payment-code {
+/* .payment-code {
     background-color: #F8F8F8;
     padding: 15px;
-}
+} */
 .payment-method>label{
     margin:0;
 }
-.payment-code>p{
+/* .payment-code>p{
     margin: 0;
-}
+} */
 .payment-box i{
-    font-size: 24px;
-    color: #337ab7;
+    font-size: 50px;
+    color: #5A96C8;
+}
+.payment-method .optional-payment-method>div{
+    display: inline-block;
+}
+.optional-payment-method .by-cash-transfer:last-child{
+    margin-left: 15px;
 }
 .payment-title{
-    margin: 15px 0;
+   margin-bottom: 15px;
 }
 .payment-title>h3{
     margin: 0;
@@ -38,7 +48,17 @@
     width:100%;
 }
 .order-summary-discount {
-    margin: 15px 0;
+    margin-top: 15px;
+    padding: 10px 0;
+    border-top: 1px solid #DDD;
+    border-bottom: 1px solid #DDD;
+}
+.order-summary-discount .form-group{
+    margin-bottom: 0;
+}
+.order-summary-total {
+    border-bottom: 1px solid #DDD;
+    padding: 10px 0;
 }
 .checkout-item td:first-child{
     width: 50px;
@@ -63,10 +83,15 @@
 .form-payment-order{
     margin: 15px 0;
 }
+
+.transferring-method{
+    margin: 20px 0;
+}
+.input-100{
+    width: 100px;
+}
 @media only screen and (max-width: 991px){
-    .payment-box {
-        margin-bottom: 20px;
-    }
+   
 }
 
 @media only screen and (max-width: 767px){
@@ -77,9 +102,17 @@
     .order-summary-discount,.payment-title,.h2-payment-title{
         text-align: center;
     }
+    
+    .payment-title{
+        margin-bottom: 0;
+    }
 
     .payment-title>*, .order-summary-discount >*{
         float: none !important;
+    }
+
+    .order-summary-discount .btn-apply{
+        margin-top: 10px;
     }
     
     .login-link {
@@ -87,4 +120,11 @@
         margin:10px 0;
     }
    
+}
+
+@media only screen and (max-width: 320px){
+    .payment-method .optional-payment-method>.by-cash-transfer{
+        font-size: 12px;
+
+    }
 }
