@@ -29,6 +29,7 @@ $(document).ready(function () {
         if ($(this).hasClass('overlay-opened')) {
             $(this).removeClass('overlay-opened');
             $("#mySidenav").removeClass('act-mobile-menu');
+            $(".mb-arrow").removeClass('active');
         }
     })
     $(".banner-owl-carousel").owlCarousel({
