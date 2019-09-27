@@ -30,6 +30,7 @@
     display: inline-block;
     border: 1px solid;
     border-radius: 8px;
+    width: 140px;
     padding: 5px 10px;
     font-weight: 600;
     margin-top: 15px !important;
@@ -58,6 +59,7 @@
 
 .product-list .product-name{
     flex: 1 1;
+    -ms-flex: 1 1 auto;
 }
 
 @media only screen and (max-width: 991px){
