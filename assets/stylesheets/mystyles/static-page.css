@@ -37,7 +37,7 @@
 }
 
 .edally-img-item img{
-    width: 600px;
+    max-width: 600px;
     margin: 0 auto;
 }
 
@@ -47,7 +47,8 @@
 }
 
 .edally-img-item-large img{
-    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 /*style list ul li*/

@@ -187,7 +187,8 @@
 }
 
 @media only screen and (max-width: 991px){
-    .des-detail-news img{
+    .des-detail-news img,
+    .transition-img img{
         max-width: 100%;
     }   
 }
